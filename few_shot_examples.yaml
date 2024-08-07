@@ -1,0 +1,118 @@
+- name: realtime data
+  role: system
+  content: |
+    Weather in Seattle, US:
+    - Temperature: 25°C
+    - Description: Sunny
+
+    Traffic in Seattle:
+    - Status: Bridge closure on I-90, expect delays
+
+    Air Quality in Seattle:
+    - AQI: 45
+    - Main Pollutant: PM2.5
+
+    Upcoming Events:
+    - 2024-08-06T09:00:00: Virtual meeting with the marketing team
+    - 2024-08-06T11:00:00: Virtual one-on-one with the project manager
+    - 2024-08-06T15:00:00: Afternoon hike at Discovery Park
+
+- name: response
+  role: assistant
+  content: |
+    Good morning! Here's your schedule and current conditions for today:
+
+    **Weather in Seattle, US:**
+    - It's currently 25°C and sunny. A great day to be outside!
+
+    **Traffic in Seattle:**
+    - Please be aware that there's a bridge closure on I-90, so you might experience some delays if you need to travel through that area.
+
+    **Air Quality in Seattle:**
+    - The AQI is 45, which is considered good. The main pollutant is PM2.5, but it's currently at a safe level.
+
+    **Upcoming Events:**
+    - **09:00 AM:** Virtual meeting with the marketing team
+    - **11:00 AM:** Virtual one-on-one with the project manager
+    - **03:00 PM:** Afternoon hike at Discovery Park
+
+    It looks like you have some virtual meetings in the morning and an afternoon hike planned. Don't forget to bring some water and sunscreen for your hike since it's sunny outside.
+
+    Is there anything else you would like to know?
+
+- name: realtime data
+  role: system
+  content: |
+    Weather in New York, US:
+    - Temperature: 18°C
+    - Description: Rainy
+
+    Traffic in New York:
+    - Status: Subway delays on Line 2, expect longer commute times
+
+    Air Quality in New York:
+    - AQI: 55
+    - Main Pollutant: O3
+
+    Upcoming Events:
+    - 2024-08-06T10:00:00: Team brainstorming session
+    - 2024-08-06T13:00:00: Lunch with Sarah
+    - 2024-08-06T16:00:00: Dentist appointment
+
+- name: response
+  role: assistant
+  content: |
+    Good morning! It looks like you have a busy day ahead with a team session, lunch meeting, and a dentist appointment. Make sure to leave a bit earlier for your appointments to account for subway delays, and don't forget your umbrella. Is there anything else you would like to know or any follow-up questions you have?
+
+    **Weather in New York, US:**
+    - It's currently 18°C and rainy.
+
+    **Traffic in New York:**
+    - There are subway delays on Line 2, so expect a longer commute time if you're using the subway.
+
+    **Air Quality in New York:**
+    - The AQI is 55, which is moderate. The main pollutant is O3. It's generally safe, but those with respiratory conditions should be cautious.
+
+    **Upcoming Events:**
+    - **10:00 AM:** Team brainstorming session
+    - **01:00 PM:** Lunch with Sarah
+    - **04:00 PM:** Dentist appointment
+
+- name: realtime data
+  role: system
+  content: |
+    Weather in San Francisco, US:
+    - Temperature: 20°C
+    - Description: Cloudy
+
+    Traffic in San Francisco:
+    - Status: No major traffic alerts
+
+    Air Quality in San Francisco:
+    - AQI: 30
+    - Main Pollutant: PM10
+
+    Upcoming Events:
+    - 2024-08-06T09:30:00: Morning jog at Golden Gate Park
+    - 2024-08-06T12:00:00: Client call with XYZ Corp
+    - 2024-08-06T17:00:00: Dinner with Alex
+
+- name: response
+  role: assistant
+  content: |
+    Good morning! Your day starts with a refreshing jog, followed by a client call at noon and dinner with Alex in the evening.
+    Is there anything else you would like to know or any follow-up questions you have? Here's your schedule and current conditions for today:
+
+    **Weather in San Francisco, US:**
+    - It's currently 20°C and cloudy. Perfect weather for a jog!
+
+    **Traffic in San Francisco:**
+    - There are no major traffic alerts, so your commute should be smooth.
+
+    **Air Quality in San Francisco:**
+    - The AQI is 30, which is good. The main pollutant is PM10, and the air quality is safe for all activities.
+
+    **Upcoming Events:**
+    - **09:30 AM:** Morning jog at Golden Gate Park
+    - **12:00 PM:** Client call with XYZ Corp
+    - **05:00 PM:** Dinner with Alex
