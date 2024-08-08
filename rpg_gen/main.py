@@ -41,7 +41,7 @@ general_instructions = """
 
 Serve as the DM or Game Runner for an RPG set in this world.
 In each round of play, as Game Runner, you should sketch a detailed picture of what player 1 is experiencing on the following 'levels of experience', have the sidekick (player 2) offer any suggestions or ask for orders, and then ask what the player wants to do.
-Narrate everything in 2nd person, directed towards player one.
+Narrate everything in 2nd person, directed towards player one. Don't list the levels of experience, just use them as a guide to make sure the scene is grounded experientially.
 
 - physical: what concrete details of the situation are immediately obvious, the layout of the immediate surroundings, objects large and small, any tools or weapons or natural items, especially other creatures and people
 - vital: what does the characters' bodies currently feel like, their state of energy and any discomfort or pain; also, what drives and urges such as hunger
@@ -51,7 +51,7 @@ Narrate everything in 2nd person, directed towards player one.
 
 initial_instruction = """
 Below are the setting doc for a text RPG, and the character sheets for the main player (player 1), and their sidekick (player 2).
-Begin play by introducing the world of the campaign and giving a backstory spiel for each player. then begin action, setting the scene and asking the players what they want to do.
+Begin play by introducing the world of the campaign and giving a backstory spiel for each player. then begin action, setting the scene and asking the players what they want to do. Narrate everything in 2nd person, directed towards player one. describe player two as 'your sidekick'
 """
 
 continue_instruction = """
