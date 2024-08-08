@@ -1,13 +1,9 @@
 import os
 import yaml
 import random
-import logging
 from prompt_poet import Prompt
 from langchain_openai import ChatOpenAI
 from jinja2 import Template
-
-# Setup logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Uncomment if you need to set OPENAI_API_KEY.
 # os.environ["OPENAI_API_KEY"] =
@@ -18,7 +14,7 @@ def load_yaml(file_path):
         with open(file_path, 'r') as file:
             return yaml.safe_load(file)
     except Exception as e:
-        logging.error(f"Error loading YAML file {file_path}: {e}")
+        print(f"Error loading YAML file {file_path}: {e}")
         return {}
 
 settings_data = load_yaml('settings.yml').get('settings', [])
@@ -27,7 +23,7 @@ character_sheets_data = load_yaml('character_sheets.yml').get('character_sheets'
 
 # Check if data is loaded correctly
 if not settings_data or not plot_hooks_data or not character_sheets_data:
-    logging.error("Failed to load necessary data from YAML files.")
+    print("Failed to load necessary data from YAML files.")
     exit(1)
 
 # Randomly select a setting document and two character sheets
@@ -37,17 +33,14 @@ selected_character_sheets = random.sample(character_sheets_data, 2)
 character_sheet_1 = selected_character_sheets[0]
 character_sheet_2 = selected_character_sheets[1]
 
-logging.debug(f"Selected setting document: {selected_setting_doc}")
-logging.debug(f"Selected plot hook: {selected_plot_hook}")
-logging.debug(f"Selected character sheets: {character_sheet_1}, {character_sheet_2}")
-
 # Function to ensure content is properly formatted for YAML
 def format_for_yaml(content):
     return yaml.dump(content, default_flow_style=False).strip()
 
 general_instructions = """
-Below are the setting doc for an RPG and the character sheets for two players. Serve as the DM for an RPG set in this world. First generate a brief campaign summary then begin play.
-In each round of play, as Game Runner, you should sketch a detailed picture of what the characters are experiencing on the following 'levels of experience', and then ask what the characters plan to do.
+
+Serve as the DM or Game Runner for an RPG set in this world.
+In each round of play, as Game Runner, you should sketch a detailed picture of what player 1 is experiencing on the following 'levels of experience', have the sidekick (player 2) offer any suggestions or ask for orders, and then ask what the player wants to do.
 
 - physical: what concrete details of the situation are immediately obvious, the layout of the immediate surroundings, objects large and small, any tools or weapons or natural items, especially other creatures and people
 - vital: what does the characters' bodies currently feel like, their state of energy and any discomfort or pain; also, what drives and urges such as hunger
@@ -56,11 +49,12 @@ In each round of play, as Game Runner, you should sketch a detailed picture of w
 """
 
 initial_instruction = """
-Begin play by setting the scene and asking the players what they want to do. Alternate turns between the two players, narrating the action in between.
+Below are the setting doc for a text RPG, and the character sheets for the main player (player 1), and their sidekick (player 2).
+Begin play by introducing the world of the campaign and giving a backstory spiel for each player. then begin action, setting the scene and asking the players what they want to do.
 """
 
 continue_instruction = """
-Continue as Game Runner for the game, as instructed. After each turn generate action until a choice point and then ask the player for their next turn.
+Continue as Game Runner for the game, generate the next action sequence, describing things on the 'levels of experience'. When events reach a choice point, ask the player for their action and if they have instructions for their sidekick.
 """
 
 responses_path = 'responses.yml'
@@ -70,7 +64,7 @@ if os.path.exists(responses_path):
         with open(responses_path, 'r') as file:
             responses = yaml.safe_load(file) or []
     except Exception as e:
-        logging.error(f"Error loading responses from {responses_path}: {e}")
+        print(f"Error loading responses from {responses_path}: {e}")
         responses = []
 else:
     responses = []
@@ -106,14 +100,12 @@ model = ChatOpenAI(model="gpt-4o-mini")
 while True:
     try:
         context = build_context()
-        logging.debug(f"Context: {context}")
 
         raw_template = build_raw_template(context)
-        logging.debug(f"Raw template: {raw_template}")
 
         # Ensure the raw_template is not None or empty
         if not raw_template:
-            logging.error("Raw template is empty or None")
+            print("Raw template is empty or None")
             break
 
         # Prepare the template data
@@ -130,17 +122,12 @@ while True:
                 raw_template=raw_template,
                 template_data=template_data
             )
-            logging.debug(f"Prompt created successfully: {prompt.messages}")
         except Exception as e:
-            logging.error(f"Error creating Prompt object: {e}")
+            print(f"Error creating Prompt object: {e}")
             break
-
-        # Log the prompt details
-        logging.debug(f"Prompt messages: {prompt.messages}")
 
         try:
             response = model.invoke(prompt.messages)
-            logging.debug(f"Response: {response.content}")
             print(f"DM: {response.content}")
 
             # Append the new response to the responses list and context
@@ -151,16 +138,16 @@ while True:
             }
             responses.append(response_entry)
         except Exception as e:
-            logging.error(f"Error invoking model: {e}")
+            print(f"Error invoking model: {e}")
             break
 
         # Save the updated responses to responses.yml
         try:
             with open(responses_path, 'w') as file:
                 yaml.safe_dump(responses, file)
-            logging.info("Response successfully written to responses.yml")
+            print("Response successfully written to responses.yml")
         except Exception as e:
-            logging.error(f"Error saving responses to file: {e}")
+            print(f"Error saving responses to file: {e}")
             break
 
         # Get the next user input
@@ -175,5 +162,5 @@ while True:
         responses.append(user_entry)
 
     except Exception as e:
-        logging.error(f"Error: {e}")
+        print(f"Error: {e}")
         break
