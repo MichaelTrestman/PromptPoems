@@ -4,6 +4,7 @@ import googlemaps
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from datetime import datetime, timedelta
+from langchain_openai import ChatOpenAI
 
 # Function to get weather data
 def get_weather(city, country, api_key):
@@ -22,8 +23,8 @@ def get_traffic_data(location, gmaps_client):
     )
     
     if traffic_info:
-        traffic_status = traffic_info[0]['legs'][0]['traffic_speed_entry'][0]['traffic_condition']
-        return traffic_status
+        traffic_warnings = traffic_info[0]['warnings']
+        return traffic_warnings
     return "No traffic information available"
 
 # Function to get AQI data
@@ -49,23 +50,36 @@ def get_calendar_events(credentials_file, days=7):
 
 # Functions to extract relevant information
 def extract_weather_info(weather_data):
-    temperature = weather_data['main']['temp']
-    description = weather_data['weather'][0]['description']
-    return {
-        "temperature": temperature,
-        "description": description
-    }
+    try:
+        temperature = weather_data['main']['temp']
+        description = weather_data['weather'][0]['description']
+        return {
+            "temperature": temperature,
+            "description": description
+        }
+    except:
+        return {
+            "temperature": "data not available",
+            "description": "data not available"
+        }
+    
 
 def extract_traffic_info(traffic_data):
     return traffic_data
 
 def extract_aqi_info(aqi_data):
-    aqi = aqi_data['aqius']
-    main_pollutant = aqi_data['mainus']
-    return {
-        "aqi": aqi,
-        "main_pollutant": main_pollutant
-    }
+    try:
+        aqi = aqi_data['aqius']
+        main_pollutant = aqi_data['mainus']
+        return {
+            "aqi": aqi,
+            "main_pollutant": main_pollutant
+        }
+    except:
+        return {
+            "aqi": "data not available",
+            "main_pollutant": "data not available"
+        }
 
 def extract_events_info(events):
     events_info = []
@@ -74,3 +88,10 @@ def extract_events_info(events):
         summary = event['summary']
         events_info.append({"start": start, "summary": summary})
     return events_info
+
+def safe_get_data(function, *args, **kwargs):
+    try:
+        return function(*args, **kwargs)
+    except Exception as e:
+        print(f"Error fetching data: {e}")
+        return ""

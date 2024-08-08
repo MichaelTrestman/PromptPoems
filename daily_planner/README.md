@@ -10,3 +10,11 @@ This is a code example to accompany [this article](https://michaeltrestman.githu
 - `raw_template.yaml` contains the template, which will be populated with data and supplied to the model.
 
 - `few_shot_examples.yaml` contains example prompt and response pairs, to support [few shot learning]().
+
+**Installation**
+
+Run the following to install dependencies:
+
+```shell
+pip install prompt_poet requests openai pyyaml google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client googlemaps langchain
+```
