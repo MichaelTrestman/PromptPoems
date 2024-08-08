@@ -145,7 +145,6 @@ while True:
         try:
             with open(responses_path, 'w') as file:
                 yaml.safe_dump(responses, file)
-            print("Response successfully written to responses.yml")
         except Exception as e:
             print(f"Error saving responses to file: {e}")
             break
