@@ -70,18 +70,45 @@ if os.path.exists(responses_path):
 else:
     responses = []
 
+prior_character_sheets_path = 'prior_character_sheets.yml'
+prior_setting_doc_path = 'prior_setting_doc.yml'
+
+def load_prior_data(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            return yaml.safe_load(file)
+    except Exception as e:
+        print(f"Error loading prior data from {file_path}: {e}")
+        return None
+
 def build_context():
+    # Load prior setting document if available
+    prior_setting_doc = load_prior_data(prior_setting_doc_path)
+    if not prior_setting_doc:
+        prior_setting_doc = selected_setting_doc
+    
+    # Load prior character sheets if available
+    prior_character_sheets = load_prior_data(prior_character_sheets_path)
+    if not prior_character_sheets:
+        prior_character_sheets = [character_sheet_1, character_sheet_2]
+
     if len(responses) == 0:
         context = [
             {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
             {'name': 'initial instruction', 'role': 'system', 'content': initial_instruction},
-            {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{selected_setting_doc}"},
+            {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{prior_setting_doc}"},
             {'name': 'plot hook', 'role': 'system', 'content': f"Plot Hook--{selected_plot_hook}"},
-            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet_1}"},
-            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{character_sheet_2}"}
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{prior_character_sheets[0]}"},
+            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{prior_character_sheets[1]}"}
         ]
     else:
         context = responses + [{'name': 'continue instruction', 'role': 'system', 'content': continue_instruction}]
+        
+        # Include prior setting document and character sheets in the context
+        context.insert(0, {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{prior_setting_doc}"})
+        for idx, sheet in enumerate(prior_character_sheets, start=1):
+            context.insert(0, {'name': f'character sheet {idx}', 'role': 'system', 'content': f"Character Sheet {idx}--{sheet}"})
+
     return context
 
 def build_raw_template(context):
