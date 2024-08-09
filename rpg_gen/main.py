@@ -17,21 +17,6 @@ def load_yaml(file_path):
         print(f"Error loading YAML file {file_path}: {e}")
         return {}
 
-settings_data = load_yaml('settings.yml').get('settings', [])
-plot_hooks_data = load_yaml('plot_hooks.yml').get('plot_hooks', [])
-character_sheets_data = load_yaml('character_sheets.yml').get('character_sheets', [])
-
-# Check if data is loaded correctly
-if not settings_data or not plot_hooks_data or not character_sheets_data:
-    print("Failed to load necessary data from YAML files.")
-    exit(1)
-
-# Randomly select a setting document and two character sheets
-selected_setting_doc = random.choice(settings_data)
-selected_plot_hook = random.choice(plot_hooks_data)
-selected_character_sheets = random.sample(character_sheets_data, 2)
-character_sheet_1 = selected_character_sheets[0]
-character_sheet_2 = selected_character_sheets[1]
 
 # Function to ensure content is properly formatted for YAML
 def format_for_yaml(content):
@@ -70,45 +55,55 @@ if os.path.exists(responses_path):
 else:
     responses = []
 
-prior_character_sheets_path = 'prior_character_sheets.yml'
-prior_setting_doc_path = 'prior_setting_doc.yml'
 
-def load_prior_data(file_path):
-    try:
-        with open(file_path, 'r') as file:
-            return yaml.safe_load(file)
-    except Exception as e:
-        print(f"Error loading prior data from {file_path}: {e}")
-        return None
 
-def build_context():
-    # Load prior setting document if available
-    prior_setting_doc = load_prior_data(prior_setting_doc_path)
-    if not prior_setting_doc:
-        prior_setting_doc = selected_setting_doc
+setting_doc = load_yaml('prior_setting_doc.yml').get('prior_setting', [])
+character_sheets = load_yaml('prior_character_sheets.yml').get('character_sheets', [])[0]
+
+if len(character_sheets) == 0:
+	character_sheets_list = load_yaml('character_sheets.yml').get('character_sheets', [])
+	character_sheets = random.sample(character_sheets_list, 2)
+
+character_sheet_1 = character_sheets
+character_sheet_2 = character_sheets
     
-    # Load prior character sheets if available
-    prior_character_sheets = load_prior_data(prior_character_sheets_path)
-    if not prior_character_sheets:
-        prior_character_sheets = [character_sheet_1, character_sheet_2]
+
+def build_context(setting_doc, character_sheet_1, character_sheet_2):
+
+
+    if not setting_doc:
+        print("setting doc not detected")
+        settings_data = load_yaml('settings.yml').get('settings', [])
+        # Check if data is loaded correctly
+        plot_hooks_data = load_yaml('plot_hooks.yml').get('plot_hooks', [])
+
+        if not settings_data or not plot_hooks_data or not character_sheet_1 or not character_sheet_2:
+            print("Failed to load necessary data from YAML files.")
+            exit(1)
+        print('building random setting doc')
+        setting_doc = ''.join(random.choice(settings_data)) + ''.join(random.choice(plot_hooks_data))
+        # setting_doc = random.choice(settings_data) + random.choice(plot_hooks_data)
+ 	
+    
 
     if len(responses) == 0:
+
         context = [
             {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
             {'name': 'initial instruction', 'role': 'system', 'content': initial_instruction},
-            {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{prior_setting_doc}"},
-            {'name': 'plot hook', 'role': 'system', 'content': f"Plot Hook--{selected_plot_hook}"},
-            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{prior_character_sheets[0]}"},
-            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{prior_character_sheets[1]}"}
+            {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{setting_doc}"},
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet_1}"},
+            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{character_sheet_2}"}
         ]
     else:
-        context = responses + [{'name': 'continue instruction', 'role': 'system', 'content': continue_instruction}]
         
-        # Include prior setting document and character sheets in the context
-        context.insert(0, {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{prior_setting_doc}"})
-        for idx, sheet in enumerate(prior_character_sheets, start=1):
-            context.insert(0, {'name': f'character sheet {idx}', 'role': 'system', 'content': f"Character Sheet {idx}--{sheet}"})
-
+        context = [
+            {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
+        	{'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{setting_doc}"},
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet_1}"},
+            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{character_sheet_2}"}
+        ] + responses
+    context.append({'name': 'continue instruction', 'role': 'system', 'content': continue_instruction})
     return context
 
 def build_raw_template(context):
@@ -127,7 +122,7 @@ model = ChatOpenAI(model="gpt-4o-mini")
 
 while True:
     try:
-        context = build_context()
+        context = build_context(setting_doc, character_sheet_1, character_sheet_2)
 
         raw_template = build_raw_template(context)
 
@@ -138,8 +133,7 @@ while True:
 
         # Prepare the template data
         template_data = {
-            "setting_doc": selected_setting_doc,
-            "plot_hook": selected_plot_hook,
+            "setting_doc": setting_doc,
             "character_sheet_1": character_sheet_1,
             "character_sheet_2": character_sheet_2
         }
