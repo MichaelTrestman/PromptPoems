@@ -26,12 +26,14 @@ general_instructions = """
 
 Serve as the DM or Game Runner for an RPG set in this world.
 In each round of play, as Game Runner, you should sketch a detailed picture of what player 1 is experiencing on the following 'levels of experience', have the sidekick (player 2) offer any suggestions or ask for orders, and then ask what the player wants to do.
-Narrate everything in 2nd person, directed towards player one. Don't list the levels of experience, just use them as a guide to make sure the scene is grounded experientially.
+Narrate everything in 2nd person, directed towards player one. 
 
 - physical: what concrete details of the situation are immediately obvious, the layout of the immediate surroundings, objects large and small, any tools or weapons or natural items, especially other creatures and people
 - vital: what does the characters' bodies currently feel like, their state of energy and any discomfort or pain; also, what drives and urges such as hunger
 - emotional: what feelings, longings, urges, moods and emotions are the characters experiencing
 - cognitive: what are the thoughts and feelings the characters are experiencing? what memories, current decisions, or hypothetical musings are most salient?
+
+Don't list the levels of experience, and don't use them all every time, just use them as a guide to make sure the scene is grounded experientially.
 """
 
 initial_instruction = """
@@ -58,18 +60,13 @@ else:
 
 
 setting_doc = load_yaml('prior_setting_doc.yml').get('prior_setting', [])
-character_sheets = load_yaml('prior_character_sheets.yml').get('character_sheets', [])[0]
+character_sheet = load_yaml('prior_character_sheets.yml').get('character_sheets', [])[0]
 
-if len(character_sheets) == 0:
+if len(character_sheet) == 0:
 	character_sheets_list = load_yaml('character_sheets.yml').get('character_sheets', [])
-	character_sheets = random.sample(character_sheets_list, 2)
+	character_sheet = random.sample(character_sheets_list, 1)    
 
-character_sheet_1 = character_sheets
-character_sheet_2 = character_sheets
-    
-
-def build_context(setting_doc, character_sheet_1, character_sheet_2):
-
+def build_context(setting_doc, character_sheet):
 
     if not setting_doc:
         print("setting doc not detected")
@@ -77,7 +74,7 @@ def build_context(setting_doc, character_sheet_1, character_sheet_2):
         # Check if data is loaded correctly
         plot_hooks_data = load_yaml('plot_hooks.yml').get('plot_hooks', [])
 
-        if not settings_data or not plot_hooks_data or not character_sheet_1 or not character_sheet_2:
+        if not settings_data or not plot_hooks_data or not character_sheet:
             print("Failed to load necessary data from YAML files.")
             exit(1)
         print('building random setting doc')
@@ -92,16 +89,14 @@ def build_context(setting_doc, character_sheet_1, character_sheet_2):
             {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
             {'name': 'initial instruction', 'role': 'system', 'content': initial_instruction},
             {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{setting_doc}"},
-            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet_1}"},
-            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{character_sheet_2}"}
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet--{character_sheet}"}
         ]
     else:
         
         context = [
             {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
         	{'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{setting_doc}"},
-            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet_1}"},
-            {'name': 'character sheet 2', 'role': 'system', 'content': f"Character Sheet 2--{character_sheet_2}"}
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet 1--{character_sheet}"}
         ] + responses
     context.append({'name': 'continue instruction', 'role': 'system', 'content': continue_instruction})
     return context
@@ -122,7 +117,7 @@ model = ChatOpenAI(model="gpt-4o-mini")
 
 while True:
     try:
-        context = build_context(setting_doc, character_sheet_1, character_sheet_2)
+        context = build_context(setting_doc, character_sheet)
 
         raw_template = build_raw_template(context)
 
@@ -134,8 +129,7 @@ while True:
         # Prepare the template data
         template_data = {
             "setting_doc": setting_doc,
-            "character_sheet_1": character_sheet_1,
-            "character_sheet_2": character_sheet_2
+            "character_sheet": character_sheet
         }
 
         # Create the prompt with the current context

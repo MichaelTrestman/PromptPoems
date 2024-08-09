@@ -16,5 +16,5 @@ This is a code example to accompany [this article](https://michaeltrestman.githu
 Run the following to install dependencies:
 
 ```shell
-pip install prompt_poet requests openai pyyaml google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client googlemaps langchain
+pip install prompt_poet requests openai pyyaml google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client googlemaps langchain-openai
 ```

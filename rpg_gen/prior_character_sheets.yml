@@ -1,68 +1,84 @@
 character_sheets: 
-  - '
-  Character Sheet: Wynoch the Shadow Assassin
-  - Class: Assassin
-  - Special Trait: Moves silently through the fog, can become invisible
-  in shadows, and has a pet raven that spies on enemies and brings back 
-  information.
-  - Spells:
-    - Shadow Cloak: Become invisible in shadows for a limited time.
-    - Wynoching Shadows: Send a message through shadows to a target within 
-    a certain range.
-    - Shadow Bind: Bind an enemy in place using dark energy.
-
-  - Inventory:
-    - Twin daggers (enchanted for stealth)
-    - Bracelet of Domination (allows mind control)
-    - Dried fruits and nuts (snack for energy)
-    - Potion of Shadow Sight (grants enhanced vision in darkness)
-    - Grappling hook
-    - Smoke bombs
-    - Flask of Binding (contains a bound swarm of Vashta Nerada)--allows user to control the Vashta Nerada and direct it to attack enemies that are within a 500 foot range, as long as there is a path of contiguous shadow connected to the bottle, or to command the creature to return to the bottle within 6 seconds on command, within a 500 foot range. If exposed to bright light, the creature is banished back to the bottle. the bottle is one inch long. 
-
-  - Backstory:
-    Wynoch was born in the bustling city of Nocturnus, where shadows are 
-    both a refuge and a threat. Trained by a secretive guild of assassins, 
-    Wynoch honed her skills in stealth and subterfuge. The loss of a mentor 
-    during a mission ignited a desire for justice, pushing her to seek out the 
-    truth hidden in the shadows. With her raven companion, she navigates the
-     archipelago, uncovering conspiracies and battling threats that endanger 
-     her home.
-
-  - Goals:
-    - To uncover the truth behind her mentors death.
-    - To stop the rise of dark magic threatening the archipelago.
-    - Achieve mastery in shadow magic and stealth.'
-
-  - 'Character Sheet: Nom the Nightblade
-
-  - Class: Dark Mage/Assassin
-  - Special Trait: A master of dark magic who can drain life force from
-  enemies and cloak herself in shadows, and wields twin daggers that shimmer
-   with a dark aura.
-  - Spells:
-    - Life Drain: Absorb life force from an enemy to heal oneself.
-    - Shadow Step: Move quickly between shadows, teleporting short 
-    distances.
-    - Shadow Snare: Bind an enemy in place using dark tendrils.
-
-  - Inventory:
-    - Twin daggers (imbued with dark magic)
-    - Shadow cloak (increases stealth)
-    - Potion of Vitality (temporarily boosts health regeneration)
-    - Dark crystal (used to amplify spells)
-    - Scroll of Shadows (contains various shadow spells)
-
-  - Backstory:
-    Nom hails from the mysterious island of Tenebris, a place steeped in
-     dark magic and ancient lore. Trained by a coven of shadow mages, she 
-     learned to harness the powers of darkness to protect her people. After
-     discovering a plot to unleash an ancient evil upon the archipelago, Nom 
-     sets out to stop it. Her path intertwines with Wynoch’s, and together they
-     form a powerful alliance in the fight against the encroaching darkness.
-
-  - Goals:
-    - To stop the ritual that threatens to unleash dark forces upon the world.
-    - To master her abilities and understand the true extent of her powers.
-    - To protect her island and her newfound allies from the sky pirates and 
-    other threats.'
+   - 'Character Sheet: Ariella Azard
+  
+  # backstory: Princess Ariella Azard was heir to the throne of Charon until she hired mercenaries to bust her loose from the distant world, her birth-place and home to a reclusive, cult-like House of Azard a space colony started by her grandfather, and led until recently by late her brother Prince Leto Azard, which recreated a bizarre and oppressive neo-feudal society.
+  
+  # Class: Neuromancer
+  
+  # Alignment: Neutral GoodAbilities
+  # Run Speed: 10m
+  # Intelligence, Charisma, Wisdom: +10 to all checks and saves; Dexterity +5 to checks and saves; Constitution +2; Strength +0;
+  
+  # Neuroelectric sense: Can sense brainwaves and heartbeats within 60 feet.
+  # Armor: super-light space armor, 12 AC, max HP 80
+  # Jet Pack: 10 charges, 2 charges to fly < 30m feet, 1 charge to hover or descend < 30m; recharge 1 charge every 6 seconds
+  # Stealth Field: +7 to stealth rolls; if Ariella does not move on her turn, she can use her action to invisible until she moves, uses a power or a weapon.
+  # Attacks
+  # Plasma Pistol: Range 80m, +6 to attack, 1d10 +4 damage
+  # Jovian Jackal custom Plasma Pistol(x2): Range 80m, +6 to attack, 1d10 +4 damage
+  # Stunner: Range: melee +6 to attack, on hit, target is stunned for 1d4 turns
+  
+  # Inventory:
+  
+  # Wallet: Credits: 15,800 Stored securely in a digital wallet. Can be accessed via the Glove Comp.
+  # heirloom jewelry: Diamond tiara, a symbol of her princess status. Three gold rings each studded with various precious stones. A pair of ornate gold and ruby earrings.
+  
+  # Rayment of the Nexus-Walker: An heirloom gift from Ariella’s grandmother, an illustrious adventurer. an advanced, incredibly sleek suit of space armor, with a retractable helmet and integrated multidirectional jet-pack. Under a cloak, it is easily mistaken for heavy clothing. A lustrous matte black inlaid with unique, hand-done, masterwork calligraphy, it is an apex synthesis of artistry, functional design, and technology.
+  
+  
+  #  Pulse Rifle: +7 to hit Range: 50m standing, 200m/500m(with disadvantage) when prone
+  
+  # * Damage:
+  #     * Non-lethal: 1d8 + 3 (stun)
+  #     * Lethal: 2d8 + 5 (pulse energy)
+  # * Weight: Light, allowing for ease in close combat situations. The pulse rifle is an advanced piece of weaponry, designed with the bounty hunter in mind. Its compact, with a sleek black finish, and features a holographic sight for accurate aiming. Its design allows for versatility in both close and long-range engagements.
+  
+  
+  # Stun Grenades (x6) Type: Thrown explosive; Range: Throwing distance, up to 30m; Effect Radius: 10m; Duration: 1d4 rounds; Effect: Emits a bright flash and a deafening bang, incapacitating enemies within the radius. Those affected must pass a Constitution save (DC 15) or be stunned for the duration. Description: These cylindrical grenades are silver with blue stripes. They have a safety pin mechanism. Upon detonation, they emit a blinding light and a loud noise, incapacitating anyone in the immediate vicinity.
+  
+  # Stun Mines (x3): Type: Placed explosive Activation: Proximity sensor with a radius of 3m Effect: Discharges an electrical pulse, incapacitating enemies within the radius for 1d6 rounds unless they pass a Constitution save (DC 17).
+  # Description: These flat, disc-shaped mines are matte black and blend seamlessly with most surfaces. When an entity comes within range, they discharge a powerful non-lethal electric pulse.
+  
+  # Projectile Net Launcher: Type: Ranged non-lethal weapon Range: 20m Effect: Fires a net to ensnare and immobilize a target. The target must pass a Strength or Dexterity save (DC 16) to avoid being ensnared. If ensnared, they can attempt a Strength check (DC 18) to break free on their turn. Description: This launcher is compact, resembling a crossbow. Its made of dark metal with a rubber grip. A cartridge at the bottom holds the net, which is made of a tough, durable material designed to withstand a good deal of force.
+  
+  # Camouflage Cloak: Designed to fit over the Rayment of the Nexus-Walker, this cloak shimmers in hues that blend seamlessly with the surrounding environment. AC Bonus: +1 to AC when worn over the Rayment of the Nexus-Walker. Special: Grants advantage on Stealth checks in environments similar to the current cloaks camouflage. Does not hinder any function of the Rayment of the Nexus-Walker.
+  
+  # Holomask: A small silver disc that projects a realistic holographic face, disguising the wearers identity. Use: Requires an action to activate. Effect: Disguise Self (DC 17) spell with unlimited uses per day. Does not require concentration. Duration: Up to 1 hour. Can be dismissed early. Allows Ariella to choose from preset faces or design her own.
+  
+  # Voice Modulator Pin: A discreet pin that, when activated, alters the wearers voice to a selected profile. Use: Requires a bonus action to activate. Effect: For 1 hour, or until deactivated, Ariellas voice can sound like any preselected profile. (DC 16 intelligence to detect voice modulation, DC 18 to recognize Ariellas voice, now (if having heard her voice previously) or later, upon hearing her voice again.
+  
+  # Glove Comp: This sleek, black, mesh-like glove projects a holographic user interface, serving as a wearable computer. Special: Grants advantage on Intelligence checks related to accessing information, hacking, or similar computer-based tasks. Features: Can be used to remotely control electronic devices within 30 feet.
+  
+  # Utility Belt: This durable belt, fitted with numerous pouches, offers a multitude of storage options. Carry Capacity: Can hold up to 10 small items or tools without encumbrance. Special: Quickdraw – Using an item from the Utility Belt can be done as a bonus action. 
+  
+  
+  # Neuromancy implant: An integral nanocerebral device embedded deep within her brains core. Invisible to most scans, only detectable with very advanced technology (grants psychic abilities: Mindsnoop, Mindshield, Overwhelm, and Incept Thought)
+  
+  # Abilities: 10/10 Max Charges; recharge 1 charge every 6 seconds
+  # Telepathic Link: Establish a mental connection with allies for silent communication within 1 mile (1 charge).
+  
+  # Mindsnoop
+  # Ariella can detect minds and discern their surface thoughts and feelings, in a radius of 100 feet. Detecting a mind makes her aware of its rough direction and distance.
+  
+  # As a subsequent action, she can make an insight check to attempt to overcome psychic concealment and deception: if the target fails a wisdom save of DC 15 you detect concealed minds and detect surface and accurately discern thoughts and feelings. If their save roll is above 19, they detect the Mindsnoop attempt and that Ariella was the caster
+  
+  # Overwhelm
+  # Ariella spends power points and chooses one of the emotional effects listed below, unleashing a wave of psychic energy in a 45 degree cone 5 feet per power point, or a radius 2 feet per power point, instantly affecting any creature with emotions that fails a DC 18 Wisdom save.
+  
+  # As a bonus action, the caster may change the emotion being broadcast, or drop the effect.
+  # Overwhelmed creatures can repeat the save to end the effect every 30 seconds. The spell ends if the creature is 10x the original range from the caster.
+  # When the spell ends, the creature gains the ability to act normally, although the emotion will linger. affected creatures know the affect was caused by the caster. 
+  
+  # effects:
+  
+  
+  # * terror: the creature can do nothing but flee or hide from the caster
+  # * despair: the creature is incapacitated by depressive lethargy
+  # * anger: the creature attacks a target specified by the caster.
+  # * bliss: calm an angry or upset creature to a state of relaxed euphoria, so they docilely follow the caster and follow very simple instructions
+  
+  # Incept thought
+  # Range 50 feet, if the target fails an Intelligence save, DC 17 you may implant a belief or course of action in the mind of the target, after which the target takes the belief or plan to be their own. If their save roll exceeds the DC by 3 or more, they know the caster has attempted to incept the thought.
+  # If a target learns they have been incepted, they can repeat the insight attempt once per hour to defeat the inception.
+  # '
+  # - '- Zog the Unyielding the Cybernetic Barbarian; Special trait--Has a mechanical arm with interchangeable tools and weapons, and a body covered in glowing tribal tattoos that enhance his strength.'
