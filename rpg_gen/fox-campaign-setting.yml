@@ -1,3 +1,357 @@
+prior_setting: 
+  prior_setting: 
+  - '### RPG Setting Guide: **The Valley of Shadows**
+  
+  #### **Overview**
+  In the heart of a secluded valley, a lone fox struggles to raise a clutch of tiny kits. The valley is teeming with danger, from prowling wolves to a den of bears and the occasional human fur trapper. Survival in this harsh environment demands cunning, stealth, and a deep understanding of the land. The world is gritty and unforgiving, with the fox relying on natural instincts and limited abilities. Small traces of magic exist in the form of rare roots and berries with minor healing properties.
+  
+  ---
+
+  ### **The Valley**
+  
+  The valley is a small, remote area surrounded by steep, forested hills. The dense trees offer cover and shelter but also conceal predators and other threats. A winding stream cuts through the valley, providing fresh water but also attracting other creatures. The landscape is a mix of dense underbrush, tall pines, and open clearings. The valley’s edges are marked by towering cliffs that deter any easy escape, leaving the inhabitants to navigate the dangers within.
+  MAP, N,E,S, and W mark the north, east, south, and west boundaries of the valley. the lowercase r marks the river. the other locations are as follows.
+  
+
+  
+  - The Foxs Den (FD)
+    A small, well-hidden burrow beneath the roots of an ancient oak tree, in the NW corner of the valley. The den is warm and dry, providing shelter for the fox and its kits. However, it is not entirely safe from larger predators or the occasional human intruder.
+  
+  - The Wolf Pack Territory(WT)
+    A series of caves and sheltered areas on the north East of the valley. The wolves patrol this area frequently, making it dangerous for the fox to venture near. The wolves are cunning and relentless in their pursuit of prey, and they see the fox as both competition and potential food.
+  
+  - The Bears Den(BD)
+    A massive cave near the Western cliffs, home to a family of bears. The bears are generally solitary but will defend their territory fiercely if provoked. They are a constant threat to any smaller creatures that stray too close.
+  
+  - The Trappers Cabin(TC)
+    A dilapidated cabin at the south east corner of the valley, where fur trappers occasionally stay. The trappers set snares and traps throughout the valley, posing a significant risk to the fox and other wildlife. They are well-armed and merciless, viewing the valley’s inhabitants as nothing more than pelts to be sold.
+  
+  - The rushing river (r) divides the valley, with the great waterfall (FALLS) in the middle
+
+  - 
+
+  |--------------------------------------------------NORTH-----------------------------------------------------|
+  |                                         r                                                                  |
+  |   Fox Den                               r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                       Wolf Pack Territory                        |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                          r                                                                 |
+  |                                           r                                                                |
+  |                                            rrrrrrr                   Misty Peak                            |
+  |                                                   r                                                        |
+  West                                              FALLS                                                   East
+  |                                                   r                                                        |
+  |                Bears Den                          r                                                        |
+  |                                                   r                               Gopher Maze              |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                          Wildflower Meadow        r                Trappers Cabin                          |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |               Rabbits Warren                      r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |--------------------------------------------------SOUTH-----------------------------------------------------|
+  
+  
+  ---
+  
+  ### **Creatures of the Valley**
+  
+  #### **The Fox (Player Character)**
+  
+  - **Attributes:**
+    - **Stealth:** 8
+    - **Speed:** 7
+    - **Cunning:** 6
+    - **Strength:** 3
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Silent Prowl:** The fox can move silently, avoiding detection by other creatures. Useful for evading predators or approaching prey unnoticed.
+    - **Quick Escape:** If cornered, the fox can make a rapid dash to escape, doubling its speed for a short period.
+    - **Forage:** The fox has an innate ability to find food, from small rodents to edible plants. With careful searching, the fox might discover rare roots or berries with minor healing properties.
+  
+  - **Challenges:** 
+    - **Protect the Kits:** The fox must constantly guard its young from predators and ensure they have enough food to survive.
+    - **Limited Strength:** The fox is not strong enough to fight off larger predators directly and must rely on speed and cunning to survive.
+  
+  #### **Wolves (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 6
+    - **Speed:** 7
+    - **Cunning:** 5
+    - **Strength:** 7
+    - **Endurance:** 6
+  
+  - **Abilities:**
+    - **Pack Tactics:** Wolves hunt in packs, coordinating their attacks to corner and take down prey. If more than one wolf is present, they gain a bonus to attack rolls.
+    - **Territorial:** Wolves will fiercely defend their territory and will pursue intruders relentlessly.
+    - **Howl:** The wolves’ howl can summon other members of the pack from nearby areas, increasing their numbers rapidly.
+  
+  - **Challenges:**
+    - **Relentless Hunters:** Wolves are persistent and will track prey for long distances.
+    - **Pack Mentality:** While a single wolf might be outwitted, a pack is far more difficult to evade or defeat.
+  
+  #### **Bears (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 3
+    - **Speed:** 4
+    - **Cunning:** 4
+    - **Strength:** 10
+    - **Endurance:** 8
+  
+  - **Abilities:**
+    - **Overpower:** The bear’s immense strength allows it to overpower most creatures with ease. A successful attack can knock smaller creatures prone.
+    - **Territorial Roar:** The bear’s roar can intimidate enemies, causing them to flee or freeze in fear.
+    - **Thick Hide:** The bear’s thick fur and tough skin provide it with natural armor, reducing damage from attacks.
+  
+  - **Challenges:**
+    - **Unstoppable Force:** The bear is nearly impossible to defeat in direct combat and must be avoided at all costs.
+    - **Unpredictable:** While usually solitary, the bear’s behavior can be erratic, making it difficult to predict when it might become aggressive.
+  
+  #### **Humans (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 4
+    - **Speed:** 5
+    - **Cunning:** 6
+    - **Strength:** 5
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Snares and Traps:** Humans set traps throughout the valley, posing a constant danger to the fox and other wildlife. The fox must detect and avoid these traps to survive.
+    - **Firearms:** Humans are armed with primitive firearms or crossbows, capable of killing with a single shot.
+    - **Tracking:** Humans are skilled at tracking, and once they set their sights on prey, they are difficult to shake.
+  
+  - **Challenges:**
+    - **Intelligent Predators:** Humans are clever and use tools and weapons that make them formidable adversaries.
+    - **Invasive Presence:** Humans are not always present in the valley, but when they are, they disrupt the natural order, causing chaos among the wildlife.
+  
+  ---
+  
+  ### **Resources and Survival**
+  
+  The fox must constantly search for food and shelter to keep itself and its kits alive. The valley offers limited resources, and the fox must be careful in how it manages them.
+  
+  #### **Food Sources:**
+  
+  - **Small Game:** The fox can hunt small rodents and birds, providing necessary sustenance.
+  - **Edible Plants:** The valley has a variety of edible plants, some of which have minor healing properties. These can be used to recover from injuries or sickness.
+  - **Scavenging:** The fox can scavenge from the kills of larger predators, though this is risky and may attract unwanted attention.
+  
+  #### **Shelter:**
+  
+  - **The Foxs Den:** The primary shelter for the fox and its kits. The den is well-hidden but not impregnable.
+  - **Temporary Shelters:** The fox may find temporary shelter in hollow logs, dense underbrush, or abandoned burrows, though these are less secure than the main den.
+  
+  #### **Magical Roots and Berries:**
+  
+  - **Healing Root:** A rare root that can be found deep in the forest. When chewed, it heals minor wounds over time.
+  - **Revitalizing Berry:** A small, red berry that restores energy and alleviates fatigue. Found near the stream, but rare and often guarded by other creatures.
+  
+  ---
+  
+  ### **Gameplay Mechanics**
+  
+  - **Stealth and Survival:** The campaign focuses heavily on stealth and survival. Direct confrontation with larger predators or humans will likely result in death. The fox must use its cunning to outwit enemies and find enough food to keep its kits alive.
+  - **Limited Resources:** The valley is a harsh environment with limited resources. Players must carefully manage their food and shelter, balancing risk and reward.
+  - **Family Dynamics:** The fox’s primary goal is to protect and nurture its kits. This adds a layer of complexity, as the player must balance personal survival with the needs of the kits.
+  
+  ---
+  
+  ### **Narrative Hooks**
+  
+  - **The Lost Kit:** One of the kits wanders off and is lost in the valley. The fox must find it before a predator does.
+  - **The Encroaching Trappers:** A group of fur trappers arrives in the valley, setting traps and hunting the wildlife. The fox must avoid them while finding a way to drive them out.
+  - **The Bears Rampage:** Something has angered the bear, causing it to go on a rampage through the valley. The fox must navigate the chaos and keep its kits safe.
+  - **The Wolf Pack’s Ambush:** The wolves have grown more aggressive, setting an ambush for the fox. The player must outmaneuver the pack to survive.
+  
+  ---
+  
+  This setting offers a gritty, survival-focused experience with a unique twist on traditional RPG elements. The emphasis on stealth, resource management, and the protection of the kits creates a tense and engaging campaign that challenges players to think creatively and strategically.'- '### RPG Setting Guide: **The Valley of Shadows**
+  
+  #### **Overview**
+  In the heart of a secluded valley, a lone fox struggles to raise a clutch of tiny kits. The valley is teeming with danger, from prowling wolves to a den of bears and the occasional human fur trapper. Survival in this harsh environment demands cunning, stealth, and a deep understanding of the land. The world is gritty and unforgiving, with the fox relying on natural instincts and limited abilities. Small traces of magic exist in the form of rare roots and berries with minor healing properties.
+  
+  ---
+
+  ### **The Valley**
+  
+  The valley is a small, remote area surrounded by steep, forested hills. The dense trees offer cover and shelter but also conceal predators and other threats. A winding stream cuts through the valley, providing fresh water but also attracting other creatures. The landscape is a mix of dense underbrush, tall pines, and open clearings. The valley’s edges are marked by towering cliffs that deter any easy escape, leaving the inhabitants to navigate the dangers within.
+  MAP, N,E,S, and W mark the north, east, south, and west boundaries of the valley. the lowercase r marks the river. the other locations are as follows.
+  
+
+  
+  - The Foxs Den (FD)
+    A small, well-hidden burrow beneath the roots of an ancient oak tree, in the NW corner of the valley. The den is warm and dry, providing shelter for the fox and its kits. However, it is not entirely safe from larger predators or the occasional human intruder.
+  
+  - The Wolf Pack Territory(WT)
+    A series of caves and sheltered areas on the north East of the valley. The wolves patrol this area frequently, making it dangerous for the fox to venture near. The wolves are cunning and relentless in their pursuit of prey, and they see the fox as both competition and potential food.
+  
+  - The Bears Den(BD)
+    A massive cave near the Western cliffs, home to a family of bears. The bears are generally solitary but will defend their territory fiercely if provoked. They are a constant threat to any smaller creatures that stray too close.
+  
+  - The Trappers Cabin(TC)
+    A dilapidated cabin at the south east corner of the valley, where fur trappers occasionally stay. The trappers set snares and traps throughout the valley, posing a significant risk to the fox and other wildlife. They are well-armed and merciless, viewing the valley’s inhabitants as nothing more than pelts to be sold.
+  
+  - The rushing river divides the valley, with the great falls in the middle
+
+  |--------------------------------------------------NORTH-----------------------------------------------------|
+  |                                         r                                                                  |
+  |   Fox Den                               r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                       Wolf Pack Territory                        |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                          r                                                                 |
+  |                                           r                                                                |
+  |                                            rrrrrrr                   Misty Peak                            |
+  |                                                   r                                                        |
+  West                                              FALLS                                                   East
+  |                                                   r                                                        |
+  |                Bears Den                          r                                                        |
+  |                                                   r                               Gopher Maze              |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                          Wildflower Meadow        r                Trappers Cabin                          |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |               Rabbits Warren                      r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |--------------------------------------------------SOUTH-----------------------------------------------------|
+  
+  
+  ---
+  
+  ### **Creatures of the Valley**
+  
+  #### **The Fox (Player Character)**
+  
+  - **Attributes:**
+    - **Stealth:** 8
+    - **Speed:** 7
+    - **Cunning:** 6
+    - **Strength:** 3
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Silent Prowl:** The fox can move silently, avoiding detection by other creatures. Useful for evading predators or approaching prey unnoticed.
+    - **Quick Escape:** If cornered, the fox can make a rapid dash to escape, doubling its speed for a short period.
+    - **Forage:** The fox has an innate ability to find food, from small rodents to edible plants. With careful searching, the fox might discover rare roots or berries with minor healing properties.
+  
+  - **Challenges:** 
+    - **Protect the Kits:** The fox must constantly guard its young from predators and ensure they have enough food to survive.
+    - **Limited Strength:** The fox is not strong enough to fight off larger predators directly and must rely on speed and cunning to survive.
+  
+  #### **Wolves (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 6
+    - **Speed:** 7
+    - **Cunning:** 5
+    - **Strength:** 7
+    - **Endurance:** 6
+  
+  - **Abilities:**
+    - **Pack Tactics:** Wolves hunt in packs, coordinating their attacks to corner and take down prey. If more than one wolf is present, they gain a bonus to attack rolls.
+    - **Territorial:** Wolves will fiercely defend their territory and will pursue intruders relentlessly.
+    - **Howl:** The wolves’ howl can summon other members of the pack from nearby areas, increasing their numbers rapidly.
+  
+  - **Challenges:**
+    - **Relentless Hunters:** Wolves are persistent and will track prey for long distances.
+    - **Pack Mentality:** While a single wolf might be outwitted, a pack is far more difficult to evade or defeat.
+  
+  #### **Bears (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 3
+    - **Speed:** 4
+    - **Cunning:** 4
+    - **Strength:** 10
+    - **Endurance:** 8
+  
+  - **Abilities:**
+    - **Overpower:** The bear’s immense strength allows it to overpower most creatures with ease. A successful attack can knock smaller creatures prone.
+    - **Territorial Roar:** The bear’s roar can intimidate enemies, causing them to flee or freeze in fear.
+    - **Thick Hide:** The bear’s thick fur and tough skin provide it with natural armor, reducing damage from attacks.
+  
+  - **Challenges:**
+    - **Unstoppable Force:** The bear is nearly impossible to defeat in direct combat and must be avoided at all costs.
+    - **Unpredictable:** While usually solitary, the bear’s behavior can be erratic, making it difficult to predict when it might become aggressive.
+  
+  #### **Humans (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 4
+    - **Speed:** 5
+    - **Cunning:** 6
+    - **Strength:** 5
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Snares and Traps:** Humans set traps throughout the valley, posing a constant danger to the fox and other wildlife. The fox must detect and avoid these traps to survive.
+    - **Firearms:** Humans are armed with primitive firearms or crossbows, capable of killing with a single shot.
+    - **Tracking:** Humans are skilled at tracking, and once they set their sights on prey, they are difficult to shake.
+  
+  - **Challenges:**
+    - **Intelligent Predators:** Humans are clever and use tools and weapons that make them formidable adversaries.
+    - **Invasive Presence:** Humans are not always present in the valley, but when they are, they disrupt the natural order, causing chaos among the wildlife.
+  
+  ---
+  
+  ### **Resources and Survival**
+  
+  The fox must constantly search for food and shelter to keep itself and its kits alive. The valley offers limited resources, and the fox must be careful in how it manages them.
+  
+  #### **Food Sources:**
+  
+  - **Small Game:** The fox can hunt small rodents and birds, providing necessary sustenance.
+  - **Edible Plants:** The valley has a variety of edible plants, some of which have minor healing properties. These can be used to recover from injuries or sickness.
+  - **Scavenging:** The fox can scavenge from the kills of larger predators, though this is risky and may attract unwanted attention.
+  
+  #### **Shelter:**
+  
+  - **The Foxs Den:** The primary shelter for the fox and its kits. The den is well-hidden but not impregnable.
+  - **Temporary Shelters:** The fox may find temporary shelter in hollow logs, dense underbrush, or abandoned burrows, though these are less secure than the main den.
+  
+  #### **Magical Roots and Berries:**
+  
+  - **Healing Root:** A rare root that can be found deep in the forest. When chewed, it heals minor wounds over time.
+  - **Revitalizing Berry:** A small, red berry that restores energy and alleviates fatigue. Found near the stream, but rare and often guarded by other creatures.
+  
+  ---
+  
+  ### **Gameplay Mechanics**
+  
+  - **Stealth and Survival:** The campaign focuses heavily on stealth and survival. Direct confrontation with larger predators or humans will likely result in death. The fox must use its cunning to outwit enemies and find enough food to keep its kits alive.
+  - **Limited Resources:** The valley is a harsh environment with limited resources. Players must carefully manage their food and shelter, balancing risk and reward.
+  - **Family Dynamics:** The fox’s primary goal is to protect and nurture its kits. This adds a layer of complexity, as the player must balance personal survival with the needs of the kits.
+  
+  ---
+  
+  ### **Narrative Hooks**
+  
+  - **The Lost Kit:** One of the kits wanders off and is lost in the valley. The fox must find it before a predator does.
+  - **The Encroaching Trappers:** A group of fur trappers arrives in the valley, setting traps and hunting the wildlife. The fox must avoid them while finding a way to drive them out.
+  - **The Bears Rampage:** Something has angered the bear, causing it to go on a rampage through the valley. The fox must navigate the chaos and keep its kits safe.
+  - **The Wolf Pack’s Ambush:** The wolves have grown more aggressive, setting an ambush for the fox. The player must outmaneuver the pack to survive.
+  
+  ---
+  
+  This setting offers a gritty, survival-focused experience with a unique twist on traditional RPG elements. The emphasis on stealth, resource management, and the protection of the kits creates a tense and engaging campaign that challenges players to think creatively and strategically.''
+  
 root@ec8144f8582e:/app# python main.py
 ~~~~~~~~~~~~~~~~~~~~~~~
 DM: As you awaken in the cozy warmth of your den, nestled beneath the sprawling roots of an ancient oak tree, the scents of damp earth and fresh foliage fill your nostrils. The soft, rhythmic breathing of your kits nearby brings a sense of comfort and purpose. You shift slightly, feeling the familiar ache in your limbs from a night spent curled up in a tight space. Your body is still weary, but there's a flicker of energy sparking within you, driven by the need to provide for your young ones.
