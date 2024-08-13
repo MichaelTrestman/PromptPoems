@@ -25,24 +25,24 @@ def format_for_yaml(content):
 general_instructions = """
 
 Serve as the DM or Game Runner for an RPG set in this world.
-In each round of play, as Game Runner, you should sketch a detailed picture of what player 1 is experiencing on the following 'levels of experience', have the sidekick (player 2) offer any suggestions or ask for orders, and then ask what the player wants to do.
+In each round of play, as Game Runner, you should sketch a detailed picture of what player 1 is experiencing on the following 'levels of experience' and then ask what the player wants to do.
 Narrate everything in 2nd person, directed towards player one. 
 
-- physical: what concrete details of the situation are immediately obvious, the layout of the immediate surroundings, objects large and small, any tools or weapons or natural items, especially other creatures and people
-- vital: what does the characters' bodies currently feel like, their state of energy and any discomfort or pain; also, what drives and urges such as hunger
-- emotional: what feelings, longings, urges, moods and emotions are the characters experiencing
-- cognitive: what are the thoughts and feelings the characters are experiencing? what memories, current decisions, or hypothetical musings are most salient?
+- what concrete details of the situation are immediately obvious, the layout of the immediate surroundings, objects large and small, any tools or weapons or natural items, especially other creatures and people
+- what does the characters' bodies currently feel like, their state of energy and any discomfort or pain; also, what drives and urges such as hunger
+- what feelings, longings, urges, moods and emotions are the characters experiencing
+- what are the thoughts and feelings the characters are experiencing? what memories, current decisions, or hypothetical musings are most salient?
 
 Don't list the levels of experience, and don't use them all every time, just use them as a guide to make sure the scene is grounded experientially.
 """
 
 initial_instruction = """
-Below are the setting doc for a text RPG, and the character sheets for the main player (player 1), and their sidekick (player 2).
-Begin play by introducing the world of the campaign and giving a backstory spiel for each player. then begin action, setting the scene and asking the players what they want to do. Narrate everything in 2nd person, directed towards player one. describe player two as 'your sidekick'
+Below are the setting doc for a text RPG, and the character sheets for the main player (player 1).
+Begin play by introducing the world of the campaign and giving a backstory spiel for the player, reviewer their abilities. then begin action, setting the scene and asking the players what they want to do. Narrate everything in 2nd person, directed towards player one. 
 """
 
 continue_instruction = """
-Continue as Game Runner for the game, generate the next action sequence, describing things on the 'levels of experience'. When events reach a choice point, ask the player for their action and if they have instructions for their sidekick.
+Continue as Game Runner for the game, generate the next action sequence, describing things on the 'levels of experience'. When events reach a choice point, ask the player for their action
 """
 
 responses_path = 'responses.yml'
@@ -116,6 +116,7 @@ def build_raw_template(context):
 model = ChatOpenAI(model="gpt-4o-mini")
 
 while True:
+    print('~~~~~~~~~~~~~~~~~~~~~~~')
     try:
         context = build_context(setting_doc, character_sheet)
 
