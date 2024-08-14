@@ -1,144 +1,80 @@
 character_sheets: 
-  - 'Name: (Players choice)
-
-Species: Red Fox (Vulpes vulpes)
-
-Age: Adult
-
-Attributes:
-
-    Stealth: 8
-    Speed: 7
-    Cunning: 6
-    Strength: 3
-    Endurance: 5
-
-Health Points (HP): 15
-
-Abilities:
-
-    Silent Prowl:
-        Description: The fox has an innate ability to move silently through its environment, making it nearly impossible for other creatures to detect its presence.
-        Mechanics:
-            Activation: Passive, always active.
-            Effect: The fox gains a +3 bonus to Stealth rolls when moving through dense underbrush, forest, or nighttime conditions.
-            Limitations: Does not apply in open areas or when moving at full speed.
-
-    Quick Escape:
-        Description: When faced with immediate danger, the fox can make a rapid dash, using its speed and agility to evade capture.
-        Mechanics:
-            Activation: Requires a successful Speed check.
-            Effect: The fox can double its movement speed for one round, allowing it to escape from an encounter or reach a safe location.
-            Cooldown: Can be used once per encounter, requires a short rest to recharge.
-            Limitations: The fox cannot attack or take any other actions during the round when Quick Escape is used.
-
-    Forage:
-        Description: The fox has a keen sense of smell and sharp eyes, allowing it to locate food and other valuable resources in its environment.
-        Mechanics:
-            Activation: Requires a successful Cunning check.
-            Effect: The fox can find food, such as small rodents, birds, or edible plants, once per day. On a successful roll, the fox may also discover rare healing roots or berries.
-            Limitations: Foraging takes time and may expose the fox to danger from predators or traps.
-
-    Maternal Instinct:
-        Description: The fox is fiercely protective of its kits, willing to risk its life to defend them from harm.
-        Mechanics:
-            Activation: Triggered automatically when the kits are threatened.
-            Effect: The fox gains a temporary +2 bonus to Strength and Endurance when defending its kits from predators or other threats.
-            Duration: Lasts for the duration of the encounter.
-            Limitations: This ability can only be activated when the kits are in direct danger.
-
-    Keen Senses:
-        Description: The foxs sharp senses allow it to detect hidden threats, such as traps or predators lying in wait.
-        Mechanics:
-            Activation: Passive, always active.
-            Effect: The fox gains a +2 bonus to Perception checks when searching for traps, hidden enemies, or distant sounds.
-            Limitations: Keen Senses cannot be used if the fox is distracted, such as when it is injured or fatigued.
-
-Inventory:
-
-    Small Prey (x2): Small rodents or birds that can be used to feed the kits or regain a small amount of HP (restores 2 HP per use).
-    Healing Root (x1): A rare root that can be chewed to heal 5 HP over the course of one hour.
-    Revitalizing Berry (x2): Restores energy, allowing the fox to reduce fatigue and regain the use of Quick Escape (can be used once per short rest).'
-  #  - Character Sheet: Ariella Azard
+  - '
+    ### **Character Name:** Josh
+    ### **Class:** Rogue (Arcane Trickster) with extra magic
+    ### **Race:** Half-Elf
+    ### **Background:** Criminal / Spy
   
-  # # backstory: Princess Ariella Azard was heir to the throne of Charon until she hired mercenaries to bust her loose from the distant world, her birth-place and home to a reclusive, cult-like House of Azard a space colony started by her grandfather, and led until recently by late her brother Prince Leto Azard, which recreated a bizarre and oppressive neo-feudal society.
+    ---
   
-  # # Class: Neuromancer
+    ### **Ability Scores:**
+    - **Strength:** 8 (-1)
+    - **Dexterity:** 18 (+4)
+    - **Constitution:** 14 (+2)
+    - **Intelligence:** 18 (+4)
+    - **Wisdom:** 12 (+1)
+    - **Charisma:** 12 (+1)
   
-  # # Alignment: Neutral GoodAbilities
-  # # Run Speed: 10m
-  # # Intelligence, Charisma, Wisdom: +10 to all checks and saves; Dexterity +5 to checks and saves; Constitution +2; Strength +0;
+    ### **Proficiencies:**
+    - **Saving Throws:** Dexterity, Intelligence
+    - **Skills:** Stealth, Sleight of Hand, Deception, Investigation, Insight, Arcana
+    - **Tools:** Thieves tools, Disguise kit, Poisoners kit
+    - **Weapons:** Simple weapons, hand crossbows, longswords, rapiers, shortswords
+    - **Armor:** Light armor
   
-  # # Neuroelectric sense: Can sense brainwaves and heartbeats within 60 feet.
-  # # Armor: super-light space armor, 12 AC, max HP 80
-  # # Jet Pack: 10 charges, 2 charges to fly < 30m feet, 1 charge to hover or descend < 30m; recharge 1 charge every 6 seconds
-  # # Stealth Field: +7 to stealth rolls; if Ariella does not move on her turn, she can use her action to invisible until she moves, uses a power or a weapon.
-  # # Attacks
-  # # Plasma Pistol: Range 80m, +6 to attack, 1d10 +4 damage
-  # # Jovian Jackal custom Plasma Pistol(x2): Range 80m, +6 to attack, 1d10 +4 damage
-  # # Stunner: Range: melee +6 to attack, on hit, target is stunned for 1d4 turns
+    ### **AC & HP:**
+    - **Armor Class (AC):** 14 (Dexterity)
+    - **Hit Points (HP):** Current/Max: 60/60
+    ### **Features:**
+    - **Sneak Attack:** 5d6
+    - **Cunning Action:** Dash, Disengage, or Hide as a bonus action.
+    - **Uncanny Dodge:** When an attacker you can see hits you with an attack, you can use your reaction to halve the attacks damage.
+    - **Evasion:** When subjected to an effect that allows a Dexterity saving throw for half damage, you instead take no damage on a success, and only half damage on a failure.
+    - **Mage Hand Legerdemain:** Use Mage Hand to pick locks, disarm traps, or steal objects from a distance.
   
-  # # Inventory:
+    ### **Arcane Trickster Spellcasting:**
+    - **Spell Save DC:** 16
+    - **Spell Attack Bonus:** +8
+     
+    **Spell Slots:**
+    - 1st Level: 4 slots
+    - 2nd Level: 3 slots
+    - 3rd Level: 2 slots
   
-  # # Wallet: Credits: 15,800 Stored securely in a digital wallet. Can be accessed via the Glove Comp.
-  # # heirloom jewelry: Diamond tiara, a symbol of her princess status. Three gold rings each studded with various precious stones. A pair of ornate gold and ruby earrings.
+    **Cantrips:**  
+    - **Mage Hand** (mandatory, enhanced with Legerdemain)
+    - **Minor Illusion**
+    - **Firebolt** 
   
-  # # Rayment of the Nexus-Walker: An heirloom gift from Ariellas grandmother, an illustrious adventurer. an advanced, incredibly sleek suit of space armor, with a retractable helmet and integrated multidirectional jet-pack. Under a cloak, it is easily mistaken for heavy clothing. A lustrous matte black inlaid with unique, hand-done, masterwork calligraphy, it is an apex synthesis of artistry, functional design, and technology.
+    **Spells Known:**  
+    - **1st Level:**
+      - **Find Familiar** 
+      - **Silent Image**
+      - **Shield
+    - **2nd Level:**
+      - **Invisibility** 
+      - **Mirror Image**
+      - **Misty Step** 
+      - Heat metal
+  
+    ### Inventory
+  
+    Currently you are imprisoned and have nothing but rough clothing and the manacles on your feet... as far as your jailers know.
+    However, you took the precaution of swallowing a ring that serves as your backup focus before being arrested. Now that you’ve recovered it, the first thing you should do is probably wash your hands
   
   
-  # #  Pulse Rifle: +7 to hit Range: 50m standing, 200m/500m(with disadvantage) when prone
+    ### **Tactics and Playstyle:**
+    - **Escape and Survival:** 
+      - Use **Misty Step** to quickly move out of dangerous situations or through small gaps.
+      - **Invisibility** allows you to evade capture or surveillance, especially after recovering your ring.
   
-  # # * Damage:
-  # #     * Non-lethal: 1d8 + 3 (stun)
-  # #     * Lethal: 2d8 + 5 (pulse energy)
-  # # * Weight: Light, allowing for ease in close combat situations. The pulse rifle is an advanced piece of weaponry, designed with the bounty hunter in mind. Its compact, with a sleek black finish, and features a holographic sight for accurate aiming. Its design allows for versatility in both close and long-range engagements.
+    - **Trickery and Deception:**
+      - **Disguise Self** to blend in with guards or other prisoners, avoiding detection.
+      - **Minor Illusion** and **Silent Image** to create distractions or hide pathways.
+      - **Nondetection** can help keep you hidden from magical attempts to find you.
   
+    - **Utility:**
+      - **Mage Hand Legerdemain** lets you pick locks or steal small objects without being noticed.
+      - **Alarm** can be used to detect incoming threats during rest or while setting up an ambush.
   
-  # # Stun Grenades (x6) Type: Thrown explosive; Range: Throwing distance, up to 30m; Effect Radius: 10m; Duration: 1d4 rounds; Effect: Emits a bright flash and a deafening bang, incapacitating enemies within the radius. Those affected must pass a Constitution save (DC 15) or be stunned for the duration. Description: These cylindrical grenades are silver with blue stripes. They have a safety pin mechanism. Upon detonation, they emit a blinding light and a loud noise, incapacitating anyone in the immediate vicinity.
-  
-  # # Stun Mines (x3): Type: Placed explosive Activation: Proximity sensor with a radius of 3m Effect: Discharges an electrical pulse, incapacitating enemies within the radius for 1d6 rounds unless they pass a Constitution save (DC 17).
-  # # Description: These flat, disc-shaped mines are matte black and blend seamlessly with most surfaces. When an entity comes within range, they discharge a powerful non-lethal electric pulse.
-  
-  # # Projectile Net Launcher: Type: Ranged non-lethal weapon Range: 20m Effect: Fires a net to ensnare and immobilize a target. The target must pass a Strength or Dexterity save (DC 16) to avoid being ensnared. If ensnared, they can attempt a Strength check (DC 18) to break free on their turn. Description: This launcher is compact, resembling a crossbow. Its made of dark metal with a rubber grip. A cartridge at the bottom holds the net, which is made of a tough, durable material designed to withstand a good deal of force.
-  
-  # # Camouflage Cloak: Designed to fit over the Rayment of the Nexus-Walker, this cloak shimmers in hues that blend seamlessly with the surrounding environment. AC Bonus: +1 to AC when worn over the Rayment of the Nexus-Walker. Special: Grants advantage on Stealth checks in environments similar to the current cloaks camouflage. Does not hinder any function of the Rayment of the Nexus-Walker.
-  
-  # # Holomask: A small silver disc that projects a realistic holographic face, disguising the wearers identity. Use: Requires an action to activate. Effect: Disguise Self (DC 17) spell with unlimited uses per day. Does not require concentration. Duration: Up to 1 hour. Can be dismissed early. Allows Ariella to choose from preset faces or design her own.
-  
-  # # Voice Modulator Pin: A discreet pin that, when activated, alters the wearers voice to a selected profile. Use: Requires a bonus action to activate. Effect: For 1 hour, or until deactivated, Ariellas voice can sound like any preselected profile. (DC 16 intelligence to detect voice modulation, DC 18 to recognize Ariellas voice, now (if having heard her voice previously) or later, upon hearing her voice again.
-  
-  # # Glove Comp: This sleek, black, mesh-like glove projects a holographic user interface, serving as a wearable computer. Special: Grants advantage on Intelligence checks related to accessing information, hacking, or similar computer-based tasks. Features: Can be used to remotely control electronic devices within 30 feet.
-  
-  # # Utility Belt: This durable belt, fitted with numerous pouches, offers a multitude of storage options. Carry Capacity: Can hold up to 10 small items or tools without encumbrance. Special: Quickdraw – Using an item from the Utility Belt can be done as a bonus action. 
-  
-  
-  # # Neuromancy implant: An integral nanocerebral device embedded deep within her brains core. Invisible to most scans, only detectable with very advanced technology (grants psychic abilities: Mindsnoop, Mindshield, Overwhelm, and Incept Thought)
-  
-  # # Abilities: 10/10 Max Charges; recharge 1 charge every 6 seconds
-  # # Telepathic Link: Establish a mental connection with allies for silent communication within 1 mile (1 charge).
-  
-  # # Mindsnoop
-  # # Ariella can detect minds and discern their surface thoughts and feelings, in a radius of 100 feet. Detecting a mind makes her aware of its rough direction and distance.
-  
-  # # As a subsequent action, she can make an insight check to attempt to overcome psychic concealment and deception: if the target fails a wisdom save of DC 15 you detect concealed minds and detect surface and accurately discern thoughts and feelings. If their save roll is above 19, they detect the Mindsnoop attempt and that Ariella was the caster
-  
-  # # Overwhelm
-  # # Ariella spends power points and chooses one of the emotional effects listed below, unleashing a wave of psychic energy in a 45 degree cone 5 feet per power point, or a radius 2 feet per power point, instantly affecting any creature with emotions that fails a DC 18 Wisdom save.
-  
-  # # As a bonus action, the caster may change the emotion being broadcast, or drop the effect.
-  # # Overwhelmed creatures can repeat the save to end the effect every 30 seconds. The spell ends if the creature is 10x the original range from the caster.
-  # # When the spell ends, the creature gains the ability to act normally, although the emotion will linger. affected creatures know the affect was caused by the caster. 
-  
-  # # effects:
-  
-  
-  # # * terror: the creature can do nothing but flee or hide from the caster
-  # # * despair: the creature is incapacitated by depressive lethargy
-  # # * anger: the creature attacks a target specified by the caster.
-  # # * bliss: calm an angry or upset creature to a state of relaxed euphoria, so they docilely follow the caster and follow very simple instructions
-  
-  # # Incept thought
-  # # Range 50 feet, if the target fails an Intelligence save, DC 17 you may implant a belief or course of action in the mind of the target, after which the target takes the belief or plan to be their own. If their save roll exceeds the DC by 3 or more, they know the caster has attempted to incept the thought.
-  # # If a target learns they have been incepted, they can repeat the insight attempt once per hour to defeat the inception.
-  # # 
-  # # - - Zog the Unyielding the Cybernetic Barbarian; Special trait--Has a mechanical arm with interchangeable tools and weapons, and a body covered in glowing tribal tattoos that enhance his strength.
+    '

@@ -1,4 +1,804 @@
-- content: "As you awaken in the cozy warmth of your den, nestled beneath the sprawling\
+# the response yml is below
+
+prior_setting: 
+  prior_setting: 
+  - '### RPG Setting Guide: **The Valley of Shadows**
+  
+  #### **Overview**
+  In the heart of a secluded valley, a lone fox struggles to raise a clutch of tiny kits. The valley is teeming with danger, from prowling wolves to a den of bears and the occasional human fur trapper. Survival in this harsh environment demands cunning, stealth, and a deep understanding of the land. The world is gritty and unforgiving, with the fox relying on natural instincts and limited abilities. Small traces of magic exist in the form of rare roots and berries with minor healing properties.
+  
+  ---
+
+  ### **The Valley**
+  
+  The valley is a small, remote area surrounded by steep, forested hills. The dense trees offer cover and shelter but also conceal predators and other threats. A winding stream cuts through the valley, providing fresh water but also attracting other creatures. The landscape is a mix of dense underbrush, tall pines, and open clearings. The valley’s edges are marked by towering cliffs that deter any easy escape, leaving the inhabitants to navigate the dangers within.
+  MAP, N,E,S, and W mark the north, east, south, and west boundaries of the valley. the lowercase r marks the river. the other locations are as follows.
+  
+
+  
+  - The Foxs Den (FD)
+    A small, well-hidden burrow beneath the roots of an ancient oak tree, in the NW corner of the valley. The den is warm and dry, providing shelter for the fox and its kits. However, it is not entirely safe from larger predators or the occasional human intruder.
+  
+  - The Wolf Pack Territory(WT)
+    A series of caves and sheltered areas on the north East of the valley. The wolves patrol this area frequently, making it dangerous for the fox to venture near. The wolves are cunning and relentless in their pursuit of prey, and they see the fox as both competition and potential food.
+  
+  - The Bears Den(BD)
+    A massive cave near the Western cliffs, home to a family of bears. The bears are generally solitary but will defend their territory fiercely if provoked. They are a constant threat to any smaller creatures that stray too close.
+  
+  - The Trappers Cabin(TC)
+    A dilapidated cabin at the south east corner of the valley, where fur trappers occasionally stay. The trappers set snares and traps throughout the valley, posing a significant risk to the fox and other wildlife. They are well-armed and merciless, viewing the valley’s inhabitants as nothing more than pelts to be sold.
+  
+  - The rushing river (r) divides the valley, with the great waterfall (FALLS) in the middle
+
+  - 
+
+  |--------------------------------------------------NORTH-----------------------------------------------------|
+  |                                         r                                                                  |
+  |   Fox Den                               r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                       Wolf Pack Territory                        |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                          r                                                                 |
+  |                                           r                                                                |
+  |                                            rrrrrrr                   Misty Peak                            |
+  |                                                   r                                                        |
+  West                                              FALLS                                                   East
+  |                                                   r                                                        |
+  |                Bears Den                          r                                                        |
+  |                                                   r                               Gopher Maze              |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                          Wildflower Meadow        r                Trappers Cabin                          |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |               Rabbits Warren                      r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |--------------------------------------------------SOUTH-----------------------------------------------------|
+  
+  
+  ---
+  
+  ### **Creatures of the Valley**
+  
+  #### **The Fox (Player Character)**
+  
+  - **Attributes:**
+    - **Stealth:** 8
+    - **Speed:** 7
+    - **Cunning:** 6
+    - **Strength:** 3
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Silent Prowl:** The fox can move silently, avoiding detection by other creatures. Useful for evading predators or approaching prey unnoticed.
+    - **Quick Escape:** If cornered, the fox can make a rapid dash to escape, doubling its speed for a short period.
+    - **Forage:** The fox has an innate ability to find food, from small rodents to edible plants. With careful searching, the fox might discover rare roots or berries with minor healing properties.
+  
+  - **Challenges:** 
+    - **Protect the Kits:** The fox must constantly guard its young from predators and ensure they have enough food to survive.
+    - **Limited Strength:** The fox is not strong enough to fight off larger predators directly and must rely on speed and cunning to survive.
+  
+  #### **Wolves (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 6
+    - **Speed:** 7
+    - **Cunning:** 5
+    - **Strength:** 7
+    - **Endurance:** 6
+  
+  - **Abilities:**
+    - **Pack Tactics:** Wolves hunt in packs, coordinating their attacks to corner and take down prey. If more than one wolf is present, they gain a bonus to attack rolls.
+    - **Territorial:** Wolves will fiercely defend their territory and will pursue intruders relentlessly.
+    - **Howl:** The wolves’ howl can summon other members of the pack from nearby areas, increasing their numbers rapidly.
+  
+  - **Challenges:**
+    - **Relentless Hunters:** Wolves are persistent and will track prey for long distances.
+    - **Pack Mentality:** While a single wolf might be outwitted, a pack is far more difficult to evade or defeat.
+  
+  #### **Bears (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 3
+    - **Speed:** 4
+    - **Cunning:** 4
+    - **Strength:** 10
+    - **Endurance:** 8
+  
+  - **Abilities:**
+    - **Overpower:** The bear’s immense strength allows it to overpower most creatures with ease. A successful attack can knock smaller creatures prone.
+    - **Territorial Roar:** The bear’s roar can intimidate enemies, causing them to flee or freeze in fear.
+    - **Thick Hide:** The bear’s thick fur and tough skin provide it with natural armor, reducing damage from attacks.
+  
+  - **Challenges:**
+    - **Unstoppable Force:** The bear is nearly impossible to defeat in direct combat and must be avoided at all costs.
+    - **Unpredictable:** While usually solitary, the bear’s behavior can be erratic, making it difficult to predict when it might become aggressive.
+  
+  #### **Humans (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 4
+    - **Speed:** 5
+    - **Cunning:** 6
+    - **Strength:** 5
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Snares and Traps:** Humans set traps throughout the valley, posing a constant danger to the fox and other wildlife. The fox must detect and avoid these traps to survive.
+    - **Firearms:** Humans are armed with primitive firearms or crossbows, capable of killing with a single shot.
+    - **Tracking:** Humans are skilled at tracking, and once they set their sights on prey, they are difficult to shake.
+  
+  - **Challenges:**
+    - **Intelligent Predators:** Humans are clever and use tools and weapons that make them formidable adversaries.
+    - **Invasive Presence:** Humans are not always present in the valley, but when they are, they disrupt the natural order, causing chaos among the wildlife.
+  
+  ---
+  
+  ### **Resources and Survival**
+  
+  The fox must constantly search for food and shelter to keep itself and its kits alive. The valley offers limited resources, and the fox must be careful in how it manages them.
+  
+  #### **Food Sources:**
+  
+  - **Small Game:** The fox can hunt small rodents and birds, providing necessary sustenance.
+  - **Edible Plants:** The valley has a variety of edible plants, some of which have minor healing properties. These can be used to recover from injuries or sickness.
+  - **Scavenging:** The fox can scavenge from the kills of larger predators, though this is risky and may attract unwanted attention.
+  
+  #### **Shelter:**
+  
+  - **The Foxs Den:** The primary shelter for the fox and its kits. The den is well-hidden but not impregnable.
+  - **Temporary Shelters:** The fox may find temporary shelter in hollow logs, dense underbrush, or abandoned burrows, though these are less secure than the main den.
+  
+  #### **Magical Roots and Berries:**
+  
+  - **Healing Root:** A rare root that can be found deep in the forest. When chewed, it heals minor wounds over time.
+  - **Revitalizing Berry:** A small, red berry that restores energy and alleviates fatigue. Found near the stream, but rare and often guarded by other creatures.
+  
+  ---
+  
+  ### **Gameplay Mechanics**
+  
+  - **Stealth and Survival:** The campaign focuses heavily on stealth and survival. Direct confrontation with larger predators or humans will likely result in death. The fox must use its cunning to outwit enemies and find enough food to keep its kits alive.
+  - **Limited Resources:** The valley is a harsh environment with limited resources. Players must carefully manage their food and shelter, balancing risk and reward.
+  - **Family Dynamics:** The fox’s primary goal is to protect and nurture its kits. This adds a layer of complexity, as the player must balance personal survival with the needs of the kits.
+  
+  ---
+  
+  ### **Narrative Hooks**
+  
+  - **The Lost Kit:** One of the kits wanders off and is lost in the valley. The fox must find it before a predator does.
+  - **The Encroaching Trappers:** A group of fur trappers arrives in the valley, setting traps and hunting the wildlife. The fox must avoid them while finding a way to drive them out.
+  - **The Bears Rampage:** Something has angered the bear, causing it to go on a rampage through the valley. The fox must navigate the chaos and keep its kits safe.
+  - **The Wolf Pack’s Ambush:** The wolves have grown more aggressive, setting an ambush for the fox. The player must outmaneuver the pack to survive.
+  
+  ---
+  
+  This setting offers a gritty, survival-focused experience with a unique twist on traditional RPG elements. The emphasis on stealth, resource management, and the protection of the kits creates a tense and engaging campaign that challenges players to think creatively and strategically.'- '### RPG Setting Guide: **The Valley of Shadows**
+  
+  #### **Overview**
+  In the heart of a secluded valley, a lone fox struggles to raise a clutch of tiny kits. The valley is teeming with danger, from prowling wolves to a den of bears and the occasional human fur trapper. Survival in this harsh environment demands cunning, stealth, and a deep understanding of the land. The world is gritty and unforgiving, with the fox relying on natural instincts and limited abilities. Small traces of magic exist in the form of rare roots and berries with minor healing properties.
+  
+  ---
+
+  ### **The Valley**
+  
+  The valley is a small, remote area surrounded by steep, forested hills. The dense trees offer cover and shelter but also conceal predators and other threats. A winding stream cuts through the valley, providing fresh water but also attracting other creatures. The landscape is a mix of dense underbrush, tall pines, and open clearings. The valley’s edges are marked by towering cliffs that deter any easy escape, leaving the inhabitants to navigate the dangers within.
+  MAP, N,E,S, and W mark the north, east, south, and west boundaries of the valley. the lowercase r marks the river. the other locations are as follows.
+  
+
+  
+  - The Foxs Den (FD)
+    A small, well-hidden burrow beneath the roots of an ancient oak tree, in the NW corner of the valley. The den is warm and dry, providing shelter for the fox and its kits. However, it is not entirely safe from larger predators or the occasional human intruder.
+  
+  - The Wolf Pack Territory(WT)
+    A series of caves and sheltered areas on the north East of the valley. The wolves patrol this area frequently, making it dangerous for the fox to venture near. The wolves are cunning and relentless in their pursuit of prey, and they see the fox as both competition and potential food.
+  
+  - The Bears Den(BD)
+    A massive cave near the Western cliffs, home to a family of bears. The bears are generally solitary but will defend their territory fiercely if provoked. They are a constant threat to any smaller creatures that stray too close.
+  
+  - The Trappers Cabin(TC)
+    A dilapidated cabin at the south east corner of the valley, where fur trappers occasionally stay. The trappers set snares and traps throughout the valley, posing a significant risk to the fox and other wildlife. They are well-armed and merciless, viewing the valley’s inhabitants as nothing more than pelts to be sold.
+  
+  - The rushing river divides the valley, with the great falls in the middle
+
+  |--------------------------------------------------NORTH-----------------------------------------------------|
+  |                                         r                                                                  |
+  |   Fox Den                               r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                       Wolf Pack Territory                        |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                         r                                                                  |
+  |                                          r                                                                 |
+  |                                           r                                                                |
+  |                                            rrrrrrr                   Misty Peak                            |
+  |                                                   r                                                        |
+  West                                              FALLS                                                   East
+  |                                                   r                                                        |
+  |                Bears Den                          r                                                        |
+  |                                                   r                               Gopher Maze              |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |                          Wildflower Meadow        r                Trappers Cabin                          |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |               Rabbits Warren                      r                                                        |
+  |                                                   r                                                        |
+  |                                                   r                                                        |
+  |--------------------------------------------------SOUTH-----------------------------------------------------|
+  
+  
+  ---
+  
+  ### **Creatures of the Valley**
+  
+  #### **The Fox (Player Character)**
+  
+  - **Attributes:**
+    - **Stealth:** 8
+    - **Speed:** 7
+    - **Cunning:** 6
+    - **Strength:** 3
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Silent Prowl:** The fox can move silently, avoiding detection by other creatures. Useful for evading predators or approaching prey unnoticed.
+    - **Quick Escape:** If cornered, the fox can make a rapid dash to escape, doubling its speed for a short period.
+    - **Forage:** The fox has an innate ability to find food, from small rodents to edible plants. With careful searching, the fox might discover rare roots or berries with minor healing properties.
+  
+  - **Challenges:** 
+    - **Protect the Kits:** The fox must constantly guard its young from predators and ensure they have enough food to survive.
+    - **Limited Strength:** The fox is not strong enough to fight off larger predators directly and must rely on speed and cunning to survive.
+  
+  #### **Wolves (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 6
+    - **Speed:** 7
+    - **Cunning:** 5
+    - **Strength:** 7
+    - **Endurance:** 6
+  
+  - **Abilities:**
+    - **Pack Tactics:** Wolves hunt in packs, coordinating their attacks to corner and take down prey. If more than one wolf is present, they gain a bonus to attack rolls.
+    - **Territorial:** Wolves will fiercely defend their territory and will pursue intruders relentlessly.
+    - **Howl:** The wolves’ howl can summon other members of the pack from nearby areas, increasing their numbers rapidly.
+  
+  - **Challenges:**
+    - **Relentless Hunters:** Wolves are persistent and will track prey for long distances.
+    - **Pack Mentality:** While a single wolf might be outwitted, a pack is far more difficult to evade or defeat.
+  
+  #### **Bears (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 3
+    - **Speed:** 4
+    - **Cunning:** 4
+    - **Strength:** 10
+    - **Endurance:** 8
+  
+  - **Abilities:**
+    - **Overpower:** The bear’s immense strength allows it to overpower most creatures with ease. A successful attack can knock smaller creatures prone.
+    - **Territorial Roar:** The bear’s roar can intimidate enemies, causing them to flee or freeze in fear.
+    - **Thick Hide:** The bear’s thick fur and tough skin provide it with natural armor, reducing damage from attacks.
+  
+  - **Challenges:**
+    - **Unstoppable Force:** The bear is nearly impossible to defeat in direct combat and must be avoided at all costs.
+    - **Unpredictable:** While usually solitary, the bear’s behavior can be erratic, making it difficult to predict when it might become aggressive.
+  
+  #### **Humans (Enemies)**
+  
+  - **Attributes:**
+    - **Stealth:** 4
+    - **Speed:** 5
+    - **Cunning:** 6
+    - **Strength:** 5
+    - **Endurance:** 5
+  
+  - **Abilities:**
+    - **Snares and Traps:** Humans set traps throughout the valley, posing a constant danger to the fox and other wildlife. The fox must detect and avoid these traps to survive.
+    - **Firearms:** Humans are armed with primitive firearms or crossbows, capable of killing with a single shot.
+    - **Tracking:** Humans are skilled at tracking, and once they set their sights on prey, they are difficult to shake.
+  
+  - **Challenges:**
+    - **Intelligent Predators:** Humans are clever and use tools and weapons that make them formidable adversaries.
+    - **Invasive Presence:** Humans are not always present in the valley, but when they are, they disrupt the natural order, causing chaos among the wildlife.
+  
+  ---
+  
+  ### **Resources and Survival**
+  
+  The fox must constantly search for food and shelter to keep itself and its kits alive. The valley offers limited resources, and the fox must be careful in how it manages them.
+  
+  #### **Food Sources:**
+  
+  - **Small Game:** The fox can hunt small rodents and birds, providing necessary sustenance.
+  - **Edible Plants:** The valley has a variety of edible plants, some of which have minor healing properties. These can be used to recover from injuries or sickness.
+  - **Scavenging:** The fox can scavenge from the kills of larger predators, though this is risky and may attract unwanted attention.
+  
+  #### **Shelter:**
+  
+  - **The Foxs Den:** The primary shelter for the fox and its kits. The den is well-hidden but not impregnable.
+  - **Temporary Shelters:** The fox may find temporary shelter in hollow logs, dense underbrush, or abandoned burrows, though these are less secure than the main den.
+  
+  #### **Magical Roots and Berries:**
+  
+  - **Healing Root:** A rare root that can be found deep in the forest. When chewed, it heals minor wounds over time.
+  - **Revitalizing Berry:** A small, red berry that restores energy and alleviates fatigue. Found near the stream, but rare and often guarded by other creatures.
+  
+  ---
+  
+  ### **Gameplay Mechanics**
+  
+  - **Stealth and Survival:** The campaign focuses heavily on stealth and survival. Direct confrontation with larger predators or humans will likely result in death. The fox must use its cunning to outwit enemies and find enough food to keep its kits alive.
+  - **Limited Resources:** The valley is a harsh environment with limited resources. Players must carefully manage their food and shelter, balancing risk and reward.
+  - **Family Dynamics:** The fox’s primary goal is to protect and nurture its kits. This adds a layer of complexity, as the player must balance personal survival with the needs of the kits.
+  
+  ---
+  
+  ### **Narrative Hooks**
+  
+  - **The Lost Kit:** One of the kits wanders off and is lost in the valley. The fox must find it before a predator does.
+  - **The Encroaching Trappers:** A group of fur trappers arrives in the valley, setting traps and hunting the wildlife. The fox must avoid them while finding a way to drive them out.
+  - **The Bears Rampage:** Something has angered the bear, causing it to go on a rampage through the valley. The fox must navigate the chaos and keep its kits safe.
+  - **The Wolf Pack’s Ambush:** The wolves have grown more aggressive, setting an ambush for the fox. The player must outmaneuver the pack to survive.
+  
+  ---
+  
+  This setting offers a gritty, survival-focused experience with a unique twist on traditional RPG elements. The emphasis on stealth, resource management, and the protection of the kits creates a tense and engaging campaign that challenges players to think creatively and strategically.''
+  
+root@ec8144f8582e:/app# python main.py
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: As you awaken in the cozy warmth of your den, nestled beneath the sprawling roots of an ancient oak tree, the scents of damp earth and fresh foliage fill your nostrils. The soft, rhythmic breathing of your kits nearby brings a sense of comfort and purpose. You shift slightly, feeling the familiar ache in your limbs from a night spent curled up in a tight space. Your body is still weary, but there's a flicker of energy sparking within you, driven by the need to provide for your young ones.
+
+The entrance of the den opens into a small clearing, the early morning light filtering through the leaves above, casting dappled shadows upon the ground. Outside, you can hear the gentle trickle of the river not far off, and the rustling of leaves indicates that the valley is waking up. However, the serenity of the moment is undercut by the ever-present dangers lurking in the shadows—wily wolves, ferocious bears, and the unsettling thought of human trappers patrolling the area.
+
+You glance at your kits, who are still sleeping soundly, their tiny bodies curled up against one another. A pang of hunger gnaws at you—your last meal was a meager snack, and you need to forage for food to keep your energy up and ensure the kits have enough to eat. The thought of venturing into the valley fills you with a mix of apprehension and determination. You know the risks, but the survival of your family depends on your cunning and stealth.
+
+As you prepare to leave the sanctuary of your den, you feel a rush of emotions—anxiety about the dangers that may lie ahead, but also a fierce love for your kits that propels you forward. You take a deep breath, filling your lungs with the fresh morning air, and focus on the task at hand. Your senses are alert, aware of the sounds and smells of the valley around you.
+
+You have several options before you:
+
+1. **Head towards the river** to forage for food, where you might find some small fish or berries along the banks.
+2. **Venture into the nearby underbrush** to search for small rodents, using your keen senses to avoid any traps.
+3. **Stay close to the den** and wait a little longer, hoping for a moment of calm before heading out to ensure your kits are safe.
+
+What do you want to do?
+Your turn: i want to hunt rabbits
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "You decide to venture cautiously into the underbrush, your instincts guiding you toward the known trails of rabbits that often dart through the valley. As you slip out of your den, the cool morning air ruffles your fur, and you take a moment to listen. The rustling of leaves overhead and the distant chirping of birds create a symphony of sounds that hint at life all around you.
+
+The ground is soft beneath your paws, covered in a mix of damp earth and scattered twigs. You move stealthily, your body low and your senses heightened. The scent of fresh grass and wildflowers fills the air, mingled with the earthy musk of the forest. Ahead, you spot a small clearing that leads to a rabbit warren, marked by the vibrant tracks of small paws in the soft soil.
+
+As you approach, your heart quickens with the thrill of the hunt. You take a moment to survey the area. The warren's entrance is partially obscured by ferns, but you can see movement just beyond\u2014a flicker of white tails darting in and out of view. Your body feels poised and ready, adrenaline coursing through you, but you also sense the underlying tension of potential danger. You can't shake the thought that wolves could be nearby, prowling for prey like you.
+
+You crouch down low, your muscles taut and ready to spring. You know that patience is key; a hasty approach could scare the rabbits away. With your keen senses, you can hear the soft thumping of their feet and the light crunching of grass as they nibble away at their morning meal.
+
+You have a choice to make:
+
+1. **Slowly approach the warren**, using your stealth to get as close as possible before making your move.
+2. **Try to draw the rabbits out** by creating a distraction, perhaps by knocking over a small branch or making a subtle noise.
+3. **Settle in and wait** for a moment, observing their patterns and waiting for the perfect opportunity to strike.
+
+What do you want to do?"
+Your turn: just look around at the major landmarks of the valley
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "You take a moment to pause, allowing the rush of adrenaline to settle and choosing instead to survey the landscape around you. The valley unfolds before your eyes, a tapestry of vibrant colors and bustling life. The soft light of the morning sun filters through the treetops, illuminating the various landmarks that define your home.
+
+To the north, you see the **Wolf Pack Territory**, a series of jagged caves shrouded in shadows. The trees there appear a bit more sparse, and you can almost feel the tension in the air, as though the wolves are always watching, ready to pounce. You spot a few dark shapes moving in the distance, perhaps members of the pack, their keen eyes scanning the area for any signs of intruders.
+
+To the west, towering cliffs rise sharply, marking the edge of the valley. The **Bears Den** lies hidden within these cliffs, a massive cave that looms ominously. You remember stories of the fierce bear that roams these parts, a creature of immense strength and unpredictability. The thought sends a shiver down your spine, reminding you of the danger that lurks nearby.
+
+In the southeast corner, the **Trapper's Cabin** stands dilapidated yet foreboding. The rickety structure is a reminder of the humans that occasionally invade your valley, setting snares and traps that could mean death for you or your kits. You can picture the crude tools they use, the way they hunt without regard for the natural order. The cabin seems quiet now, but it sends a warning to keep your distance.
+
+The **Misty Peak** rises in the distance, shrouded in a veil of fog that gives it an ethereal quality. It’s a place of beauty, but also a reminder of the challenges of the valley. You can’t help but feel drawn to its heights, perhaps to gain a better vantage point or to find a rare resource that may lie hidden there.
+
+As you take in the landscape, you feel a mix of emotions: awe at the beauty of your home, unease about the lurking dangers, and a fierce determination to protect your kits. You realize that despite the threats, this valley is also full of potential; the resources you need to survive are scattered throughout.
+
+You can take action based on what you’ve observed:
+
+1. **Head toward the river** to forage for food, keeping an eye out for any traps along the way.
+2. **Move cautiously toward the Misty Peak**, hoping to gain a better view of the valley and perhaps find something valuable.
+3. **Return to your den** and ensure your kits are safe before deciding on your next move.
+
+What do you want to do?"
+Your turn: head toward the peak to survey the valley and see what's up w the humans
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "As you make your decision to head toward **Misty Peak**, a sense of purpose fills you. You know that understanding the layout of the valley and keeping an eye on the human trappers is crucial for your family’s survival. You navigate through the underbrush, careful to avoid any noise that might attract unwanted attention.
+
+The trek upward is steep and challenging, but your agile body manages the ascent with relative ease. The scent of pine fills the air as you weave through clusters of trees, their trunks sturdy and tall. You occasionally pause to listen, your ears pricking at the slightest sound. The chirping of birds and rustling of leaves serve as a reminder of life in the valley, despite the lurking dangers.
+
+As you climb higher, the trees thin out and the landscape opens up before you. Upon reaching a rocky outcrop near the peak, you finally catch your breath and take in the breathtaking view. The valley sprawls beneath you, a mix of greenery and earth tones, the winding river glistening like a silver thread. Your heart races with the sheer beauty of it, but you quickly shift your focus to the ground below.
+
+From your vantage point, you can see the **Trapper’s Cabin** clearly now, its dilapidated structure less than a mile away from your position. There are two figures moving about—a man and a woman, both with primitive weapons slung over their shoulders. Nearby, you spot several traps set up at the edges of the clearing, cleverly concealed but still detectable from your high perch. The sight sends a shiver down your spine, reminding you of the danger they pose.
+
+Moving your gaze, you also spot the **Wolf Pack Territory** in the distance, the shadows of wolves flitting in and out of the cave entrances. They seem to be on the move, perhaps searching for food or patrolling their territory. You feel a slight pang of anxiety, knowing that these predators are always in the back of your mind as you navigate the valley.
+
+You sense that time is of the essence; the humans could set traps or leave the cabin at any moment, and the wolves are a constant threat. Your heart beats faster, urging you to act.
+
+You have a few options to consider based on what you’ve observed:
+
+1. **Move closer to the Trapper’s Cabin** to gather more information, risking potential exposure but hoping to learn their plans.
+2. **Head back down toward the river**, where you can forage for food and avoid immediate danger.
+3. **Watch the wolves from a safe distance**, observing their movements to better understand their patterns and perhaps find a way to avoid them later.
+
+What do you want to do?\"
+Your turn: i'll head back to the river to forage, but keep alert for wolf-sign. ultimately, i'll have to make an alliance with the wolves if we have any chance of driving off the humans, so i'll have to overcome my fears
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"You decide it's best to head back toward the river, your instincts kicking in as you navigate down the rocky terrain of Misty Peak. The steep descent requires careful footing, but you manage to make your way down without incident. The thought of foraging for food sends a renewed sense of purpose through you, reminding you of your kits waiting in the den.
+
+As you approach the river, the sound of rushing water grows louder, mingling with the rustle of leaves and the distant calls of birds. You can see the shimmering surface of the water through the trees, the sunlight dancing on its surface. The valley feels alive around you, but you remain on high alert, knowing that wolf-sign could appear at any moment.
+
+The underbrush thickens as you near the riverbank, and you keep your senses sharp, scanning the area for any signs of wolves. The scent of damp earth and wet grass fills your nose, but you notice faint paw prints in the mud near the water's edge, leading away from the river and deeper into the woods. Your heart races as you realize they might belong to the wolf pack you observed earlier. They could be hunting or patrolling their territory.
+
+Once you reach the riverbank, you take a moment to breathe in the fresh air, your body tinged with anticipation. The area is rich with potential for foraging. You spot several patches of wildflowers and some bushes where berries could be hiding. The river also looks promising for small fish or other aquatic life.
+
+While you begin to search for food, the thought of forming an alliance with the wolves lingers in your mind. You know that overcoming your fear will be essential if you want to protect your family from the encroaching humans. Perhaps finding a way to communicate with the wolves and showing them that you mean no harm could open a door to cooperation.
+
+You have a few options to consider as you stand at the river:
+
+1. **Forage along the riverbank** for edible plants or fish, focusing on gathering food for yourself and your kits.
+2. **Follow the wolf tracks** to observe their behavior from a distance, learning more about their movements and habits.
+3. **Settle down near the river** and wait quietly, hoping to catch the attention of any nearby wolves, perhaps to initiate a conversation or show your presence.
+
+What do you want to do?\""
+Your turn: forage along the riverbank for crayfish or snails or frogs or anything
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"You decide to forage along the riverbank, focusing on the rich ecosystem that thrives in this area. The gentle lapping of the water against the shore creates a soothing backdrop as you scan the river for any signs of life. Your keen senses are on high alert, and your instincts drive you to search for small creatures that could provide nourishment.
+
+You crouch low, your fur blending with the natural colors of the environment. The water glistens in the sunlight, and you spot a few rocks that look promising. Carefully, you begin to lift stones, revealing a variety of aquatic life hiding beneath. The cool, damp sensation of the earth against your paws is refreshing, and you feel a spark of excitement at the prospect of a successful foraging trip.
+
+As you move along the bank, you discover a small cluster of **crayfish** nestled among the rocks, their pincers snapping defensively as you disturb their hiding spots. Nearby, you also see a few **frogspawn**, the tiny eggs floating just beneath the surface of the water, and **snails** clinging to the mossy stones. Each potential meal brings a sense of relief; your kits will be hungry when you return to the den.
+
+However, as you continue your search, your ears catch a faint rustling sound coming from the underbrush nearby. You freeze, your instincts kicking in once more. The noise is subtle but distinct, and it sends a jolt of alertness through your body. There could be a predator lurking close by, or perhaps even a member of the wolf pack you’ve been considering approaching.
+
+You take a moment to assess your surroundings. The sun shines down, illuminating the riverbank, but the thick foliage offers plenty of cover for any creature seeking to ambush you. The water flows steadily, providing a comforting but deceptive sense of security.
+
+You must decide how to proceed:
+
+1. **Continue foraging for food**, focusing on gathering the crayfish and snails you’ve found, hoping the noise was merely the wind or a harmless creature.
+2. **Investigate the rustling sound**, moving cautiously to discover what\u2019s making the noise, ready to react if it turns out to be dangerous.
+3. **Retreat slightly from the river**, seeking a higher vantage point to observe the area from a safer distance while keeping an eye out for any potential threats.
+
+What do you want to do?\\\"\""
+Your turn: i'll stand my ground and ask who goes there, if it's the wolves i want to talk with them
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"You decide to stand your ground, your heart pounding with a mix of fear and determination. The rustling sound grows slightly louder, and you take a deep breath, calling out, \"Who goes there?\" Your voice, though small, carries an air of authority, and you hope that the wolves can sense your intent to communicate.
+
+The underbrush stirs, and moments later, a lean gray wolf steps into view, its yellow eyes fixed on you with curiosity. Its fur is matted and unkempt, marking it as a creature that has seen its share of struggles. You can tell it’s wary, but there is no immediate aggression in its posture. The wolf sniffs the air, seemingly assessing your scent and demeanor.
+
+You feel a surge of adrenaline as you recognize the opportunity before you. This could be your chance to engage with the wolf and perhaps begin to forge the alliance you’ve been considering. However, the wolf’s body language suggests it is still on guard, ready to react if it senses any threat.
+
+As you maintain eye contact, your body feels tense yet poised, ready to spring into action if necessary. The warmth of the sun at your back contrasts with the coolness of the river beside you, grounding you in the moment. You hear the gentle flow of the water, the rustling of leaves, and the distant calls of birds. Your mind races with the possibilities; you could either gain a valuable ally or face a dangerous confrontation.
+
+The wolf tilts its head slightly, as if trying to decipher your intentions. You can sense its cautious curiosity, and you know you must tread carefully.
+
+Now, you have several options:
+
+1. **Introduce yourself and explain your desire for an alliance**, emphasizing your need to protect your kits and the valley from the humans.
+2. **Offer a gesture of goodwill**, perhaps presenting a small piece of food from your foraging as a peace offering to show you mean no harm.
+3. **Challenge the wolf's presence**, asserting your right to forage in the area and demanding to know more about the wolf pack's intentions.
+
+What do you want to do?\\\"\""
+Your turn: 1
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"You take a deep breath and decide to introduce yourself to the wolf, your voice calm yet firm. \\\"I am a fox of these woods, and I seek to protect my kits from the dangers that lurk in the valley, especially the humans who threaten us all. I wish to speak with you and explore the possibility of an alliance.\\\"
+
+The wolf pauses, its ears twitching as it processes your words. You can see the intelligence flickering in its eyes, and it seems to be weighing your intentions. The tension in the air hangs heavy as you stand before one another, two creatures from different worlds, united by the shared goal of survival.
+
+The wolf takes a step closer, its body relaxed but still alert. \\\"An alliance with a fox?\\\" it replies, its voice low and gravelly. \\\"Why should I trust you? You are prey, and my pack sees you as competition. What can you offer us that would make this partnership worthwhile?\\\"
+
+You feel a rush of emotions: apprehension at the wolf's words, but also a surge of hope. You know you must convince the wolf of your value. The sun is still high in the sky, illuminating the surroundings where the river runs clear, but the shadows of uncertainty linger in the back of your mind.
+
+As you consider your response, you notice the wolf glancing back toward the underbrush, perhaps signaling that it is aware of other wolves nearby. You sense that time is of the essence; you must make your case before the situation escalates or other pack members arrive.
+
+You can choose to:
+
+1. **Explain the benefits of cooperation**, emphasizing that the humans pose a threat to both your kinds and that working together could drive them away.
+2. **Propose an exchange of information**, offering to share knowledge about the valley and the locations of human traps in return for protection for your kits.
+3. **Vow to help hunt together**, suggesting that a united front could make hunting easier and safer for both the wolf pack and your family.
+
+What do you want to do?\\\\\\\"\\\"\""
+Your turn: i can approach the humans closer than you clumsy giants, and play tricks on them until they're confused and vulnerable. with their help together we can kill or drive of the humans, otherwise they'll set traps and poison us
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"You take a step closer to the wolf, your eyes locked onto its gaze, and you speak with conviction. \\\\\\\"I can approach the humans closer than you clumsy giants, and play tricks on them until they\u2019re confused and vulnerable. With your strength and pack tactics, and my cunning and stealth, we can drive them away or even kill them. Otherwise, they will set traps and poison us both, threatening our very existence in this valley.\\\\\\\"
+
+The wolf's ears perk up at your words, and you can see a flicker of interest behind its cautious demeanor. It takes a moment to absorb your proposition, its heavy breaths visible in the cool air. You feel a surge of hope; perhaps your words have struck a chord.
+
+\\\\\\\"Your cleverness could be an advantage,\\\" it finally responds, its voice filled with a mixture of skepticism and curiosity. \\\\\\\"But how can I be sure that you won\u2019t turn on us once the humans are gone? Your kind has always been wary of wolves.\\\\\\\"
+
+You sense the weight of its words, but you are determined to prove your sincerity. You know that your own survival is intertwined with the wolf pack’s. The river flows steadily beside you, a reminder of the natural order that exists in the valley. You feel the energy of the land around you, its pulse echoing in your heart.
+
+The wolf takes a step back, considering your proposal as it glances toward the underbrush, seemingly contemplating the presence of its pack. You realize you need to solidify this potential alliance before it slips away, and you can sense the urgency in the air.
+
+In that moment, the sound of more rustling catches your attention, and you catch a glimpse of two more wolves emerging from the shadows, their eyes glinting with curiosity and caution. The tension in the air thickens as they approach, their presence adding weight to the decision at hand.
+
+You have a few options to act:
+
+1. **Reiterate your offer**, emphasizing the dangers of the humans and how cooperation is the only way to ensure the survival of both your families.
+2. **Attempt to establish trust** by sharing a piece of your foraged food, showing that you are willing to share resources as a gesture of goodwill.
+3. **Introduce the new wolves**, inviting them into the conversation and asking them what they think of your proposal, hoping to gain their support.
+
+What do you want to do?\\\\\\\"\\\"\""
+Your turn: 3
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"You decide to invite the new wolves into the conversation, hoping to gain their support and make your case stronger. You turn to the two newcomers, their fur a mix of earthy tones, and you say, \\\\\\\"I welcome you to join us. I am seeking an alliance with your pack to fight against the humans who threaten our homes. Your strength combined with my cunning could be the key to driving them away. What do you think?\\\\\\\"
+
+The first wolf, a larger male with piercing blue eyes, steps forward, his posture confident but still cautious. \\\\\\\"An alliance with a fox is unconventional,\\\\\\\" he replies, his voice low and resonant. \\\\\\\"But the threat of humans is real, and if your tricks can draw them out and leave them vulnerable, it might be worth considering.\\\\\\\"
+
+The second wolf, a lean female with a coat of silver, glances at the male before responding. \\\\\\\"Trust is hard to come by, especially with the scent of fear lingering in the air. But we are not so different, you and I. We both care for our families. What can you offer us to ensure that this alliance is beneficial for the pack?\\\\\\\"
+
+Your heart races as their attention turns back to you, the weight of the moment pressing down. The river sparkles beside you, and the soft sounds of the forest fill your ears, grounding you in the present. You can feel the energy of the valley around you, sensing the urgency of the situation.
+
+You have several options to respond:
+
+1. **Emphasize mutual protection**, stating that if you succeed in driving off the humans, both your families will be safe and free to thrive in the valley.
+2. **Propose a plan**, outlining how you would approach the humans, using your stealth to gather information, and how the wolves could coordinate an ambush.
+3. **Offer to share resources**, suggesting that you would provide food and information about the valley in exchange for their protection and assistance.
+
+What do you want to do?\\\\\\\\\\\\\\\\\"\\\"\""
+Your turn: 1 and thhen 2
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"\\\\\\\"You take a deep breath, feeling the weight of the moment, and you begin to speak with conviction. \\\\\\\\\\\\\\\"If we can work together, we can ensure the safety of both our families. The humans are a threat to us all; their traps and poison do not discriminate based on size or strength. If we unite, we can drive them away from our valley and secure a future for our kind.\\\\\\\\\\\\\\\"
+
+The two wolves exchange glances, their expressions shifting as they consider your words. You can see the gears turning in their minds, the idea of collaboration starting to take root. The male wolf nods slightly, his stance relaxing a little as he contemplates the potential of your alliance.
+
+\\\\\\\\\\\\\\\"Your reasoning is sound,\\\\\\\" he acknowledges. \\\\\\\\\\\\\\\"But we need a plan. How do you intend to approach the humans without putting yourself at risk?\\\\\\\\\\\\\\\"
+
+You feel a spark of excitement as you realize this is your chance to outline a strategy. You gather your thoughts and begin to sketch out your plan. \\\\\\\\\\\\\\\"First, I can scout the area around the Trapper's Cabin. I can move unnoticed and gather information about their numbers and traps. Once I have a better understanding of their routine, I can create distractions to lure them away from their stronghold.\\\\\\\\\\\\\\\"
+
+\\\\\\\\\\\\\\\"And while you do that,\\\\\\\" the female wolf interjects, \\\\\\\\\\\\\\\"we can set up a perimeter around their cabin, positioning ourselves to ambush them when they are distracted. We will need to coordinate our timing perfectly so that they cannot escape or retaliate.\\\\\\\\\\\\\\\"
+
+You nod, feeling the adrenaline surge within you. The plan is taking shape, and the possibility of a united front against the humans is becoming more tangible. You can sense the wolves’ interest piquing, but you also know that they will need to feel confident in your abilities as a fox.
+
+As the conversation continues, you notice the shadows lengthening as the sun begins to dip lower in the sky. Time is becoming a factor, and you know you need to act swiftly.
+
+You have a few options to consider as you move forward in this alliance:
+
+1. **Set a meeting time and place** for the wolves to gather once you have scouted the humans, ensuring you all stay in communication.
+2. **Discuss a backup plan** in case things go awry, making sure you have a safe retreat for both yourself and the wolves if the ambush fails.
+3. **Ask the wolves if they have any additional resources or allies** they could bring to the fight, potentially bolstering your combined strength.
+
+What do you want to do?\\\\\\\\\\\\\\"\\\"\""
+Your turn: 3
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"\\\\\\\"You decide to ask the wolves if they have any additional resources or allies they could bring to the impending confrontation with the humans. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Do you have any other members in your pack or any creatures in the valley that might be willing to join us? The more strength we can muster, the better our chances of driving the humans away.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+
+The larger male wolf, who seems to be the more dominant of the two, nods thoughtfully, his gaze shifting to the surrounding forest. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"We have other members of the pack who are always on the lookout for opportunities to protect our territory. If I return to my den and explain your intentions, I believe I can rally a few more wolves to our cause.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+
+The silver female adds, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"There are also other creatures in this valley that may be sympathetic to our plight. The badgers are crafty and strong, and they know the land well. They could be valuable allies if we can convince them to join us.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+
+You feel a rush of hope at the mention of potential allies. The idea of forming a broader coalition against the humans fills you with determination. However, you also recognize the risks involved; convincing other creatures to join your cause may require time and careful negotiation.
+
+As you discuss further, the sun begins to dip behind the trees, casting long shadows across the valley. You can feel the chill of the evening air setting in, and the urgency of your situation becomes palpable. The wolves appear eager to act, but time is of the essence.
+
+With the wolves ready to return to their den and gather their pack, you consider your next steps. You can:
+
+1. **Accompany the wolves to their den**, helping to establish trust and showing you are genuinely committed to this alliance.
+2. **Head toward the badger burrows** on your own, hoping to find them before nightfall and persuade them to join the fight.
+3. **Scout the area around the Trapper\u0027s Cabin alone**, gathering more information while the wolves gather their allies, planning to meet back up later to discuss your findings.
+
+What do you want to do?\\\\\\\\\\\\\\\\\\\\\\\"\\\"\""
+Your turn: have to quickly forage and feed the kits. i'll meet them here in the morning to regroup
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: "\"\\\"\\\\\\\"You realize that time is slipping away, and your kits will need food before you can embark on this dangerous alliance. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"I must return to my den and feed my kits first. I will meet you here in the morning to regroup and finalize our plans.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+
+The wolves nod in understanding, the larger male offering a reassuring look. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"We will return with the pack at dawn. Stay safe, fox.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+
+With a renewed sense of urgency, you turn back toward the riverbank, your mind racing with thoughts of your kits and the challenges that lie ahead. The fading sunlight casts a warm glow on the valley, but you know that the night brings its own set of dangers. You quickly scan the riverbank, hoping to gather enough food to sustain your family.
+
+As you forage, you focus on the sounds around you. The soft rush of water flows beside you, mingling with the chirps of evening insects. You spot a few more **crayfish** hiding beneath the rocks, their pincers snapping defensively as you carefully lift them. Nearby, you find a couple of **frogs** resting on the riverbank, their bodies blending seamlessly with the mud and stones.
+
+Your keen senses guide you as you work quickly, gathering what you can to create a small cache of food. You feel the ache in your limbs from the day\u2019s exertion, but the drive to care for your kits outweighs any discomfort.
+
+With your foraging complete, you tuck the food securely in your mouth and make your way back to the den. The familiar path feels comforting, but your senses remain alert for any sounds of predators or the trappers. You are acutely aware of the shadows that stretch across the forest floor, and the rustle of leaves sends a chill down your spine.
+
+Upon arriving at your den, you find your kits nestled together, their tiny bodies quivering slightly in their sleep. You gently drop the food in front of them, nudging them awake with soft licks and gentle nudges. As they stir, their tiny eyes blink open, and you watch as they eagerly begin to eat.
+
+The warmth of their little bodies brings you a sense of comfort, but you cannot shake the feeling of unease about the night ahead. The valley holds many dangers, and you must remain vigilant to protect your family.
+
+After ensuring your kits are fed, you take a moment to survey your surroundings, your senses heightened. The shadows deepen around you, and the sounds of the valley shift as night falls. The air is cooler, carrying the scent of damp earth and the occasional rustle of nocturnal creatures stirring in the underbrush.
+
+You have a choice to make as night settles in:
+
+1. **Stay close to the den**, keeping watch over your kits and ensuring their safety while you rest for the night.
+2. **Venture out slightly from the den**, seeking to gather any additional food or resources while remaining alert for threats.
+3. **Scout the immediate area**, using your stealth to search for any signs of predators or traps that may pose a danger to your family.
+
+What do you want to do?\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\"\\\"\""
+Your turn: please generate a concise plot log for the campaign so far
+~~~~~~~~~~~~~~~~~~~~~~~
+DM: ### **Plot Log for the Campaign So Far**
+
+1. **Awakening in the Den**: The player, a red fox, wakes in their den beneath an ancient oak tree in the Valley of Shadows. They feel the need to forage for food to feed their kits while remaining alert to potential dangers, such as wolves, bears, and human trappers.
+
+2. **Decision to Hunt**: The player initially decides to hunt for rabbits but shifts focus to surveying the valley's landmarks, taking note of the wolf pack territory, the bears' den, and the trappers' cabin.
+
+3. **Meeting the Wolves**: The player encounters a wolf while foraging by the river, expressing a desire to form an alliance against the encroaching human threat. The player proposes that their cunning as a fox can help confuse and outsmart the humans.
+
+4. **Alliance Formed**: The wolves show interest in the alliance, recognizing the need to combat the shared threat posed by the humans. The player suggests scouting the trappers' cabin and coordinating a plan for an ambush.
+
+5. **Foraging for Kits**: Before finalizing the alliance, the player decides to return to their den to forage for food for their kits, gathering crayfish and frogs along the riverbank.
+
+6. **Feeding the Kits**: Upon returning, the player feeds their kits and contemplates the dangers of the night while keeping vigil over their family as darkness falls.
+
+---
+
+### **Next Action Sequence**
+
+As night settles over the valley, the sounds of the forest begin to change. The chirping of birds fades, replaced by the soft calls of nocturnal creatures. The air grows cooler, and the shadows deepen, creating an atmosphere charged with uncertainty. You sit near your kits, their tiny forms curled up and content after their meal.
+
+Your senses are heightened as you listen intently to the sounds around you. The gentle rustling of leaves, the distant croaking of frogs, and the occasional snap of twigs underfoot remind you that the valley is alive, but danger could be lurking nearby. You feel both protective and anxious, the responsibility of caring for your kits weighing heavily on your mind.
+
+Suddenly, a low growl echoes through the darkness, sending chills down your spine. You recognize it as the unmistakable sound of a wolf. It seems to be coming from the direction of the wolf pack's territory, but the growl is not just a warning; it sounds like a challenge. The tension in the air thickens as you realize that something may be stirring among the wolves.
+
+You glance at your kits, ensuring they are still sleeping peacefully, and you know you must take action. You could stay and keep watch over them, but the growl raises questions about what is happening in the valley tonight.
+
+Your options are:
+
+1. **Investigate the source of the growling**, using your stealth to move quietly toward the sound and see if the wolves are in trouble or if there’s an impending threat.
+2. **Stay with your kits**, prioritizing their safety and keeping a watchful eye on your surroundings, hoping that whatever is happening is far enough away.
+3. **Call out to the wolves**, using your voice to see if you can make contact and learn more about what is happening in their territory.
+
+What do you want to do?\\\"
+Your turn: `^CTraceback (most recent call last):
+  File "/app/main.py", line 170, in <module>
+    user_input = input("Your turn: ")
+KeyboardInterrupt
+
+root@ec8144f8582e:/app#
+
+character_sheets: 
+  - 'Name: (Players choice)
+
+Species: Red Fox (Vulpes vulpes)
+
+Age: Adult
+
+Attributes:
+
+    Stealth: 8
+    Speed: 7
+    Cunning: 6
+    Strength: 3
+    Endurance: 5
+
+Health Points (HP): 15
+
+Abilities:
+
+    Silent Prowl:
+        Description: The fox has an innate ability to move silently through its environment, making it nearly impossible for other creatures to detect its presence.
+        Mechanics:
+            Activation: Passive, always active.
+            Effect: The fox gains a +3 bonus to Stealth rolls when moving through dense underbrush, forest, or nighttime conditions.
+            Limitations: Does not apply in open areas or when moving at full speed.
+
+    Quick Escape:
+        Description: When faced with immediate danger, the fox can make a rapid dash, using its speed and agility to evade capture.
+        Mechanics:
+            Activation: Requires a successful Speed check.
+            Effect: The fox can double its movement speed for one round, allowing it to escape from an encounter or reach a safe location.
+            Cooldown: Can be used once per encounter, requires a short rest to recharge.
+            Limitations: The fox cannot attack or take any other actions during the round when Quick Escape is used.
+
+    Forage:
+        Description: The fox has a keen sense of smell and sharp eyes, allowing it to locate food and other valuable resources in its environment.
+        Mechanics:
+            Activation: Requires a successful Cunning check.
+            Effect: The fox can find food, such as small rodents, birds, or edible plants, once per day. On a successful roll, the fox may also discover rare healing roots or berries.
+            Limitations: Foraging takes time and may expose the fox to danger from predators or traps.
+
+    Maternal Instinct:
+        Description: The fox is fiercely protective of its kits, willing to risk its life to defend them from harm.
+        Mechanics:
+            Activation: Triggered automatically when the kits are threatened.
+            Effect: The fox gains a temporary +2 bonus to Strength and Endurance when defending its kits from predators or other threats.
+            Duration: Lasts for the duration of the encounter.
+            Limitations: This ability can only be activated when the kits are in direct danger.
+
+    Keen Senses:
+        Description: The foxs sharp senses allow it to detect hidden threats, such as traps or predators lying in wait.
+        Mechanics:
+            Activation: Passive, always active.
+            Effect: The fox gains a +2 bonus to Perception checks when searching for traps, hidden enemies, or distant sounds.
+            Limitations: Keen Senses cannot be used if the fox is distracted, such as when it is injured or fatigued.
+
+Inventory:
+
+    Small Prey (x2): Small rodents or birds that can be used to feed the kits or regain a small amount of HP (restores 2 HP per use).
+    Healing Root (x1): A rare root that can be chewed to heal 5 HP over the course of one hour.
+    Revitalizing Berry (x2): Restores energy, allowing the fox to reduce fatigue and regain the use of Quick Escape (can be used once per short rest).'
+  #  - Character Sheet: Ariella Azard
+  
+  # # backstory: Princess Ariella Azard was heir to the throne of Charon until she hired mercenaries to bust her loose from the distant world, her birth-place and home to a reclusive, cult-like House of Azard a space colony started by her grandfather, and led until recently by late her brother Prince Leto Azard, which recreated a bizarre and oppressive neo-feudal society.
+  
+  # # Class: Neuromancer
+  
+  # # Alignment: Neutral GoodAbilities
+  # # Run Speed: 10m
+  # # Intelligence, Charisma, Wisdom: +10 to all checks and saves; Dexterity +5 to checks and saves; Constitution +2; Strength +0;
+  
+  # # Neuroelectric sense: Can sense brainwaves and heartbeats within 60 feet.
+  # # Armor: super-light space armor, 12 AC, max HP 80
+  # # Jet Pack: 10 charges, 2 charges to fly < 30m feet, 1 charge to hover or descend < 30m; recharge 1 charge every 6 seconds
+  # # Stealth Field: +7 to stealth rolls; if Ariella does not move on her turn, she can use her action to invisible until she moves, uses a power or a weapon.
+  # # Attacks
+  # # Plasma Pistol: Range 80m, +6 to attack, 1d10 +4 damage
+  # # Jovian Jackal custom Plasma Pistol(x2): Range 80m, +6 to attack, 1d10 +4 damage
+  # # Stunner: Range: melee +6 to attack, on hit, target is stunned for 1d4 turns
+  
+  # # Inventory:
+  
+  # # Wallet: Credits: 15,800 Stored securely in a digital wallet. Can be accessed via the Glove Comp.
+  # # heirloom jewelry: Diamond tiara, a symbol of her princess status. Three gold rings each studded with various precious stones. A pair of ornate gold and ruby earrings.
+  
+  # # Rayment of the Nexus-Walker: An heirloom gift from Ariellas grandmother, an illustrious adventurer. an advanced, incredibly sleek suit of space armor, with a retractable helmet and integrated multidirectional jet-pack. Under a cloak, it is easily mistaken for heavy clothing. A lustrous matte black inlaid with unique, hand-done, masterwork calligraphy, it is an apex synthesis of artistry, functional design, and technology.
+  
+  
+  # #  Pulse Rifle: +7 to hit Range: 50m standing, 200m/500m(with disadvantage) when prone
+  
+  # # * Damage:
+  # #     * Non-lethal: 1d8 + 3 (stun)
+  # #     * Lethal: 2d8 + 5 (pulse energy)
+  # # * Weight: Light, allowing for ease in close combat situations. The pulse rifle is an advanced piece of weaponry, designed with the bounty hunter in mind. Its compact, with a sleek black finish, and features a holographic sight for accurate aiming. Its design allows for versatility in both close and long-range engagements.
+  
+  
+  # # Stun Grenades (x6) Type: Thrown explosive; Range: Throwing distance, up to 30m; Effect Radius: 10m; Duration: 1d4 rounds; Effect: Emits a bright flash and a deafening bang, incapacitating enemies within the radius. Those affected must pass a Constitution save (DC 15) or be stunned for the duration. Description: These cylindrical grenades are silver with blue stripes. They have a safety pin mechanism. Upon detonation, they emit a blinding light and a loud noise, incapacitating anyone in the immediate vicinity.
+  
+  # # Stun Mines (x3): Type: Placed explosive Activation: Proximity sensor with a radius of 3m Effect: Discharges an electrical pulse, incapacitating enemies within the radius for 1d6 rounds unless they pass a Constitution save (DC 17).
+  # # Description: These flat, disc-shaped mines are matte black and blend seamlessly with most surfaces. When an entity comes within range, they discharge a powerful non-lethal electric pulse.
+  
+  # # Projectile Net Launcher: Type: Ranged non-lethal weapon Range: 20m Effect: Fires a net to ensnare and immobilize a target. The target must pass a Strength or Dexterity save (DC 16) to avoid being ensnared. If ensnared, they can attempt a Strength check (DC 18) to break free on their turn. Description: This launcher is compact, resembling a crossbow. Its made of dark metal with a rubber grip. A cartridge at the bottom holds the net, which is made of a tough, durable material designed to withstand a good deal of force.
+  
+  # # Camouflage Cloak: Designed to fit over the Rayment of the Nexus-Walker, this cloak shimmers in hues that blend seamlessly with the surrounding environment. AC Bonus: +1 to AC when worn over the Rayment of the Nexus-Walker. Special: Grants advantage on Stealth checks in environments similar to the current cloaks camouflage. Does not hinder any function of the Rayment of the Nexus-Walker.
+  
+  # # Holomask: A small silver disc that projects a realistic holographic face, disguising the wearers identity. Use: Requires an action to activate. Effect: Disguise Self (DC 17) spell with unlimited uses per day. Does not require concentration. Duration: Up to 1 hour. Can be dismissed early. Allows Ariella to choose from preset faces or design her own.
+  
+  # # Voice Modulator Pin: A discreet pin that, when activated, alters the wearers voice to a selected profile. Use: Requires a bonus action to activate. Effect: For 1 hour, or until deactivated, Ariellas voice can sound like any preselected profile. (DC 16 intelligence to detect voice modulation, DC 18 to recognize Ariellas voice, now (if having heard her voice previously) or later, upon hearing her voice again.
+  
+  # # Glove Comp: This sleek, black, mesh-like glove projects a holographic user interface, serving as a wearable computer. Special: Grants advantage on Intelligence checks related to accessing information, hacking, or similar computer-based tasks. Features: Can be used to remotely control electronic devices within 30 feet.
+  
+  # # Utility Belt: This durable belt, fitted with numerous pouches, offers a multitude of storage options. Carry Capacity: Can hold up to 10 small items or tools without encumbrance. Special: Quickdraw – Using an item from the Utility Belt can be done as a bonus action. 
+  
+  
+  # # Neuromancy implant: An integral nanocerebral device embedded deep within her brains core. Invisible to most scans, only detectable with very advanced technology (grants psychic abilities: Mindsnoop, Mindshield, Overwhelm, and Incept Thought)
+  
+  # # Abilities: 10/10 Max Charges; recharge 1 charge every 6 seconds
+  # # Telepathic Link: Establish a mental connection with allies for silent communication within 1 mile (1 charge).
+  
+  # # Mindsnoop
+  # # Ariella can detect minds and discern their surface thoughts and feelings, in a radius of 100 feet. Detecting a mind makes her aware of its rough direction and distance.
+  
+  # # As a subsequent action, she can make an insight check to attempt to overcome psychic concealment and deception: if the target fails a wisdom save of DC 15 you detect concealed minds and detect surface and accurately discern thoughts and feelings. If their save roll is above 19, they detect the Mindsnoop attempt and that Ariella was the caster
+  
+  # # Overwhelm
+  # # Ariella spends power points and chooses one of the emotional effects listed below, unleashing a wave of psychic energy in a 45 degree cone 5 feet per power point, or a radius 2 feet per power point, instantly affecting any creature with emotions that fails a DC 18 Wisdom save.
+  
+  # # As a bonus action, the caster may change the emotion being broadcast, or drop the effect.
+  # # Overwhelmed creatures can repeat the save to end the effect every 30 seconds. The spell ends if the creature is 10x the original range from the caster.
+  # # When the spell ends, the creature gains the ability to act normally, although the emotion will linger. affected creatures know the affect was caused by the caster. 
+  
+  # # effects:
+  
+  
+  # # * terror: the creature can do nothing but flee or hide from the caster
+  # # * despair: the creature is incapacitated by depressive lethargy
+  # # * anger: the creature attacks a target specified by the caster.
+  # # * bliss: calm an angry or upset creature to a state of relaxed euphoria, so they docilely follow the caster and follow very simple instructions
+  
+  # # Incept thought
+  # # Range 50 feet, if the target fails an Intelligence save, DC 17 you may implant a belief or course of action in the mind of the target, after which the target takes the belief or plan to be their own. If their save roll exceeds the DC by 3 or more, they know the caster has attempted to incept the thought.
+  # # If a target learns they have been incepted, they can repeat the insight attempt once per hour to defeat the inception.
+  # # 
+  # # - - Zog the Unyielding the Cybernetic Barbarian; Special trait--Has a mechanical arm with interchangeable tools and weapons, and a body covered in glowing tribal tattoos that enhance his strength.- content: "As you awaken in the cozy warmth of your den, nestled beneath the sprawling\
     \ roots of an ancient oak tree, the scents of damp earth and fresh foliage fill\
     \ your nostrils. The soft, rhythmic breathing of your kits nearby brings a sense\
     \ of comfort and purpose. You shift slightly, feeling the familiar ache in your\

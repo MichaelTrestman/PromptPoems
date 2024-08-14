@@ -42,7 +42,10 @@ Begin play by introducing the world of the campaign and giving a backstory spiel
 """
 
 continue_instruction = """
-Continue as Game Runner for the game, generate the next action sequence, describing things on the 'levels of experience'. When events reach a choice point, ask the player for their action
+Continue as Game Runner for the game, generate the next action sequence, describing things on the 'levels of experience'. When events reach a choice point, ask the player for their action, but don't make any suggstions or give too much guidance.
+do not make it easy for the player, instead try to give a sense of weight to their decisions by following the scenario to its logical conclusion. if the player makes a poor decision, it is more fun if they have to face the consequences of their actions by having things not go their way.
+Do not allow the player to do anything impossible or cast spells that are not in their character sheet. if they attempt to do anything impossible, tell them why it is impossible and allow them to pick a different move instead of moving the action forward.
+If they attempt something that seems chancey, come up with a dice roll that seems fair and roll it for them using the values from their character sheet and any applicable situational modifiers. use the result to determine following events.
 """
 
 responses_path = 'responses.yml'
@@ -86,10 +89,10 @@ def build_context(setting_doc, character_sheet):
     if len(responses) == 0:
 
         context = [
-            {'name': 'system instructions', 'role': 'system', 'content': general_instructions},
-            {'name': 'initial instruction', 'role': 'system', 'content': initial_instruction},
+            {'name': 'system instructions', 'role': 'system', 'content': general_instructions},            
             {'name': 'setting document', 'role': 'system', 'content': f"Setting Document--{setting_doc}"},
-            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet--{character_sheet}"}
+            {'name': 'character sheet 1', 'role': 'system', 'content': f"Character Sheet--{character_sheet}"},
+            {'name': 'initial instruction', 'role': 'system', 'content': initial_instruction}
         ]
     else:
         
